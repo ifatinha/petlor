@@ -1,15 +1,14 @@
 /** open menu mobile */
 const menuMobile = document.querySelector(".menu-mobile");
+const sidenav = document.querySelector(".overlay");
 
 function openMenu(ev) {
     ev.currentTarget.classList.toggle("change");
 
-    const sidenav = document.querySelector(".overlay");
-
-    if (sidenav.style.display === "none") {
-        sidenav.style.display = "block";
+    if (sidenav.style.height === "75%") {
+        sidenav.style.height = "0%";
     } else {
-        sidenav.style.display = "none";
+        sidenav.style.height = "75%";
     }
 }
 
