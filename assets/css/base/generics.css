@@ -13,13 +13,14 @@ a {
 
 .container {
     margin : 0 auto;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     width  : 100%;
 }
 
 @media screen and (min-width: 1200px) {
     .container {
         max-width: var(--breakpoint-xl);
+        padding  : 0 1rem;
     }
 }
 

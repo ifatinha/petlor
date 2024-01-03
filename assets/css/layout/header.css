@@ -94,6 +94,7 @@
     font-size: 1.75rem;
 }
 
+/* desktop menu */
 .header-navbar {
     align-items    : center;
     justify-content: flex-end;
@@ -137,7 +138,6 @@
     color: var(--success);
 }
 
-/* desktop menu */
 #desktop-navbar {
     display: none;
     flex   : 1;
@@ -166,6 +166,10 @@
     display: inline-block;
 }
 
+#mobile-navabar {
+    position: relative;
+}
+
 #mobile-navbar .bar {
     background-color: var(--black);
     border-radius   : 4px;
@@ -188,8 +192,30 @@
 }
 
 .overlay {
+    box-shadow      : #000000 0px 5px 20px -17px;
     background-color: var(--white);
     position        : absolute;
-    right           : 0;
+    left            : 0;
+    transition      : var(--transition);
     width           : 100%;
+    display         : none;
+    background-color: palevioletred;
+}
+
+.sidenav {
+    flex-direction: column;
+    padding       : 1rem 0.5rem;
+    width         : 100%;
+}
+
+.sidenav li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding      : .8rem 1rem;
+}
+
+.sidenav li a {
+    color         : var(--black);
+    font-size     : 0.875rem;
+    font-weight   : 700;
+    text-transform: uppercase;
 }
