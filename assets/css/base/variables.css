@@ -1,4 +1,5 @@
 :root {
+    --black        : #000;
     --blue         : #007bff;
     --indigo       : #6610f2;
     --purple       : #6f42c1;
@@ -25,5 +26,5 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --transition   : .3s ease-in-out;
+    --transition   : .3s all ease;
 }

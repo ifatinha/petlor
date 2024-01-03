@@ -24,49 +24,85 @@
 </head>
 
 <body>
+    <!-- start header -->
     <header class="header">
-        <div class="container header-wrap flex">
-            <div class="row" id="header-contact">
-                <a href="tel:+001234567">
-                    <i class="fa-solid fa-phone"></i>
-                    +00 1234 5678
-                </a>
-                <a href="mailto:petlor@contato.com.br">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    petlor@contato.com.br
-                </a>
-            </div>
+        <div class="header-contact">
+            <div class="container header-info flex">
+                <div class="row" id="header-contact">
+                    <a href="tel:+001234567">
+                        <i class="fa-solid fa-phone"></i>
+                        +00 1234 5678
+                    </a>
+                    <a href="mailto:petlor@contato.com.br">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        petlor@contato.com.br
+                    </a>
+                </div>
 
-            <div class="row">
-                <ul class="flex header-list">
-                    <li class="flex">
-                        <a href="http://www.facebook.com/petlor1" aria-label="Facebook" target="_blank">
-                            <i class="fa-brands fa-facebook-f"></i></a>
-                    </li>
-                    <li class="flex">
-                        <a href="http://www.twitter.com/petlor1" aria-label="Twitter" target="_blank">
-                            <i class="fa-brands fa-twitter"></i></a>
-                    </li>
-                    <li class="flex">
-                        <a href="https://wa.me/5583912345678?text=Welcome+to+Petlor." aria-label="Chat on WhatsApp"
-                            target="_blank">
-                            <i class="fa-brands fa-square-whatsapp"></i></a>
-                    </li>
-                    <li class="flex">
-                        <a href="http://www.instagram.com/petlor1" aria-label="Instagram" target="_blank">
-                            <i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                    <li class="flex">
-                        <a href="http://www.youtube.com/petlor1" aria-label="Youtube" target="_blank">
-                            <i class="fa-brands fa-youtube"></i></a>
-                    </li>
-                </ul>
+                <div class="row">
+                    <ul class="flex header-list">
+                        <li class="flex">
+                            <a href="http://www.facebook.com/petlor1" aria-label="Facebook" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li class="flex">
+                            <a href="http://www.twitter.com/petlor1" aria-label="Twitter" target="_blank">
+                                <i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li class="flex">
+                            <a href="https://wa.me/5583912345678?text=Welcome+to+Petlor." aria-label="Chat on WhatsApp"
+                                target="_blank">
+                                <i class="fa-brands fa-square-whatsapp"></i></a>
+                        </li>
+                        <li class="flex">
+                            <a href="http://www.instagram.com/petlor1" aria-label="Instagram" target="_blank">
+                                <i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="flex">
+                            <a href="http://www.youtube.com/petlor1" aria-label="Youtube" target="_blank">
+                                <i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+
+        <nav class="header-menu">
+            <div class="container flex header-menu-wrap">
+                <a href="index.html" class="flex header-brand">
+                    <span class="brand-icon"><i class="fa-solid fa-paw"></i></span>
+                    Petlor
+                </a>
+
+                <!-- navbar desktop -->
+                <div id="desktop-navbar">
+                    <ul class="flex header-navbar">
+                        <li class="link-active"><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#veterinarian">Veterinarian</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#princing">Princing</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div id="mobile-navbar">
+                    <div class="menu-mobile">
+                        <div class="bar" id="bar1"></div>
+                        <div class="bar" id="bar2"></div>
+                        <div class="bar" id="bar3"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
+    <!-- end header -->
 
     <!-- scripts -->
-    <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous" defer></script>
+    <script src="assets/js/script.js" defer></script>
 </body>
 
 </html>
