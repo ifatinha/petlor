@@ -63,14 +63,11 @@
 }
 
 .header-menu {
-    box-shadow: #000000 0px 5px 20px -17px;
-    color     : var(--black);
-    padding   : 0 .5rem;
-    width     : 100%;
-}
-
-.header-menu-bg {
     background-color: var(--light);
+    box-shadow      : #000000 0px 5px 20px -17px;
+    color           : var(--black);
+    padding         : 0 .5rem;
+    width           : 100%;
 }
 
 .header-menu-wrap {
@@ -83,6 +80,7 @@
     position: fixed;
     top     : 0;
     width   : 100%;
+    z-index : 99999;
 }
 
 .header-brand {
@@ -178,6 +176,7 @@
 
 #mobile-navabar {
     position: relative;
+    z-index : 9999;
 }
 
 #mobile-navbar .bar {
@@ -210,13 +209,15 @@
     position        : absolute;
     transition      : max-height .4s ease-in-out;
     width           : 100%;
+    z-index         : 2;
 }
 
 .sidenav {
-    flex-direction: column;
-    height        : 100%;
-    padding       : 1rem 0.5rem;
-    width         : 100%;
+    flex-direction  : column;
+    padding         : 1rem 0.5rem;
+    width           : 100%;
+    z-index         : 3;
+    background-color: darkcyan;
 }
 
 .sidenav li {

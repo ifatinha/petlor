@@ -1,10 +1,10 @@
 /** open menu mobile */
 const menuMobile = document.querySelector(".menu-mobile");
-const sidenav = document.querySelector(".overlay");
 
 function openMenu(ev) {
     ev.currentTarget.classList.toggle("change");
 
+    const sidenav = document.querySelector(".overlay");
     if (sidenav.style.maxHeight) {
         sidenav.style.maxHeight = null;
     } else {
@@ -16,10 +16,11 @@ menuMobile.addEventListener("click", openMenu);
 
 /** stick menu */
 function activeStick() {
-    if (scrollY > stick) {
-        navbar.classList.add("stick", "header-menu-bg");
+    if (window.scrollY >= stick) {
+        console.log(window.scrollY);
+        navbar.classList.add("stick");
     } else {
-        navbar.classList.remove("stick", "header-menu-bg");
+        navbar.classList.remove("stick");
     }
 }
 

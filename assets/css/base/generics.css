@@ -43,3 +43,7 @@ a {
 .row {
     flex: 1;
 }
+
+main {
+    z-index: -2;
+}
