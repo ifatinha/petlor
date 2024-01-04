@@ -13,3 +13,31 @@ function openMenu(ev) {
 }
 
 menuMobile.addEventListener("click", openMenu);
+
+/** stick menu */
+function activeStick() {
+    if (scrollY > stick) {
+        navbar.classList.add("stick", "header-menu-bg");
+    } else {
+        navbar.classList.remove("stick", "header-menu-bg");
+    }
+}
+
+window.onscroll = function () { activeStick() }
+const navbar = document.querySelector(".header-menu");
+const stick = navbar.offsetTop;
+
+/** active menu */
+// const linksMenu = document.querySelectorAll(".header-navbar li");
+
+// function activeLinks(link) {
+//     link.addEventListener("click", () => {
+//         link.classList.add("link-active");
+//     })
+
+//     linksMenu.forEach((li) => {
+//         li.classList.remove("link-active");
+//     })
+// }
+
+// linksMenu.forEach(activeLinks);

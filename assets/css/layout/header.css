@@ -69,10 +69,20 @@
     width     : 100%;
 }
 
+.header-menu-bg {
+    background-color: var(--light);
+}
+
 .header-menu-wrap {
     align-items    : center;
     justify-content: space-between;
     width          : 100%;
+}
+
+.stick {
+    position: fixed;
+    top     : 0;
+    width   : 100%;
 }
 
 .header-brand {
@@ -118,11 +128,11 @@
     width: 100%;
 }
 
-.header-navbar li.link-active::after {
+.header-navbar .link-active::after {
     width: 100%;
 }
 
-.header-navbar li.link-active a {
+.header-navbar .link-active a {
     color: var(--success);
 }
 
