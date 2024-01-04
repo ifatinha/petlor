@@ -5,10 +5,10 @@ const sidenav = document.querySelector(".overlay");
 function openMenu(ev) {
     ev.currentTarget.classList.toggle("change");
 
-    if (sidenav.style.height === "75%") {
-        sidenav.style.height = "0%";
+    if (sidenav.style.maxHeight) {
+        sidenav.style.maxHeight = null;
     } else {
-        sidenav.style.height = "75%";
+        sidenav.style.maxHeight = sidenav.scrollHeight + "px";
     }
 }
 

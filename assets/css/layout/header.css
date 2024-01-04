@@ -194,21 +194,19 @@
 .overlay {
     box-shadow      : #000000 0px 5px 20px -17px;
     background-color: var(--white);
-    height      : 0%;
+    max-height      : 0;
     left            : 0;
     overflow        : hidden;
     position        : absolute;
-    transition      : .4s ease-in-out;
+    transition      : max-height .4s ease-in-out;
     width           : 100%;
-    background-color: darkcyan;
 }
 
 .sidenav {
-    background-color: darkblue;
-    flex-direction  : column;
-    height          : 100%;
-    padding         : 1rem 0.5rem;
-    width           : 100%;
+    flex-direction: column;
+    height        : 100%;
+    padding       : 1rem 0.5rem;
+    width         : 100%;
 }
 
 .sidenav li {
