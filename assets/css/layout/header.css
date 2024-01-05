@@ -68,6 +68,8 @@
     color           : var(--black);
     padding         : 0 .5rem;
     width           : 100%;
+    z-index: -99;
+    background-color: darkcyan;
 }
 
 .header-menu-wrap {
