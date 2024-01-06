@@ -1,10 +1,12 @@
 .main {
     background              : linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/hero-bg.jpg");
+    /* background           : url("../../images/hero-bg.jpg"); */
     background-repeat       : no-repeat;
-    background-position     : center;
+    background-position     : 50% 50%;
     background-size         : cover;
-    /* background-attachment: fixed; */
+    background-attachment   : fixed;
     height                  : 100%;
+    position                : relative;
     width                   : 100%;
 }
 
@@ -15,6 +17,7 @@
     justify-content: center;
     text-align     : center;
     width          : 100%;
+    z-index        : 1;
 }
 
 .main-row {
@@ -40,4 +43,3 @@
         font-size: 3.75rem;
     }
 }
-
