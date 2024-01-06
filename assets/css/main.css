@@ -1,7 +1,8 @@
 /* base css */
-@import "base/minireset.min.css";
-@import "base/variables.css";
-@import "base/generics.css";
+@import "base/main.css";
+
+/* util */
+@import "util/main.css";
 
 /* layout */
-@import "layout/header.css";
+@import "layout/main.css";

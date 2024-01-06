@@ -1,0 +1,43 @@
+.main {
+    background              : linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/hero-bg.jpg");
+    background-repeat       : no-repeat;
+    background-position     : center;
+    background-size         : cover;
+    /* background-attachment: fixed; */
+    height                  : 100%;
+    width                   : 100%;
+}
+
+.main-container {
+    align-items    : center;
+    flex-direction : column;
+    height         : 100%;
+    justify-content: center;
+    text-align     : center;
+    width          : 100%;
+}
+
+.main-row {
+    align-items    : center;
+    flex           : 0 0 90%;
+    flex-direction : column;
+    height         : 800px;
+    justify-content: center;
+    max-width      : 90%;
+}
+
+.main-title {
+    color         : var(--white);
+    font-weight   : 800;
+    font-size     : 2.5rem;
+    line-height   : 1.2;
+    margin-bottom : 1.5rem;
+    text-transform: capitalize;
+}
+
+@media screen and (min-width: 1200px) {
+    .main-title {
+        font-size: 3.75rem;
+    }
+}
+

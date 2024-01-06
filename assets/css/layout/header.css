@@ -59,7 +59,7 @@
 }
 
 .header-list li:hover {
-    background-color: var(--success);
+    background-color: var(--green);
 }
 
 .header-menu {
@@ -93,7 +93,7 @@
 }
 
 .brand-icon {
-    color       : var(--success);
+    color       : var(--green);
     margin-right: .5rem;
     text-align  : center;
 }
@@ -114,7 +114,7 @@
 }
 
 .header-navbar li::after {
-    background: var(--success);
+    background: var(--green);
     content   : "";
     display   : block;
     height    : 2px;
@@ -131,7 +131,7 @@
 }
 
 .header-navbar .link-active a {
-    color: var(--success);
+    color: var(--green);
 }
 
 .header-navbar a {
@@ -143,7 +143,7 @@
 }
 
 .header-navbar a:hover {
-    color: var(--success);
+    color: var(--green);
 }
 
 #desktop-navbar {
