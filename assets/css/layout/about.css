@@ -1,0 +1,52 @@
+.section-about {
+    flex-wrap: wrap;
+    width    : 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .section-about .row {
+        flex: 1 1 100%;
+    }
+}
+
+.about-img-bg {
+    background         : url("../../images/about-1.jpg") no-repeat;
+    background-position: center center;
+    background-size    : cover;
+    width              : 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .about-img-bg {
+        min-height: 70vh;
+    }
+}
+
+.about-desc {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas  :
+        "title title title title"
+        "service1 service1 service2 service2"
+        "service3 service3 service4 service4";
+    padding: 3rem 0 3rem 3rem;
+}
+
+.about-title {
+    grid-area: title;
+}
+
+#service1 {
+    grid-area: service1;
+}
+
+#service2 {
+    grid-area: service2;
+}
+
+#service3 {
+    grid-area: service3;
+}
+
+#service4 {
+    grid-area: service4;
+}

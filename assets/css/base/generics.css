@@ -31,6 +31,10 @@
     flex: 1;
 }
 
+.grid {
+    display: grid;
+}
+
 .bg-green-light {
     background-color: var(--green-light);
 }

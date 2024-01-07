@@ -45,8 +45,3 @@ function activeLink(link, index) {
 }
 
 linksMenu.forEach(activeLink);
-
-/** owlCarousel */
-$(document).ready(function () {
-    $(".owl-carousel").owlCarousel();
-});
