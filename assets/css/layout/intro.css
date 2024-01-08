@@ -57,6 +57,12 @@
     width          : 80px;
 }
 
+.intro-icon i {
+    color     : var(--green-light);
+    font-size : 2.5rem;
+    text-align: center;
+}
+
 @media screen and (min-width: 576px) {
     .intro-icon {
         height    : 100px;
@@ -96,19 +102,19 @@
     color: var(--gray);
 }
 
-.intro-desc h3 {
+.intro-desc h2 {
     font-size    : 1.25rem;
     font-weight  : 700;
     margin-bottom: .5rem;
 }
 
-.intro-card.bg-white h3 {
+.intro-card.bg-white h2 {
     color     : var(--black);
     transition: var(--transition);
 }
 
 .intro-card:hover:not(:first-of-type) .intro-desc,
-.intro-card:hover:not(:first-of-type) .intro-desc h3 {
+.intro-card:hover:not(:first-of-type) .intro-desc h2 {
     color: var(--white);
 }
 
@@ -118,7 +124,7 @@
     border-radius  : 50%;
     height         : 50px;
     justify-content: center;
-    margin-bottom  : -15%;
+    margin-bottom  : -20%;
     transition     : var(--transition);
     width          : 50px;
 }
@@ -126,6 +132,12 @@
 @media screen and (min-width: 992px) {
     .intro-btn {
         margin-bottom: -18%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .intro-btn {
+        margin-bottom: -40%;
     }
 }
 
