@@ -1,0 +1,14 @@
+#faq {
+    padding-top   : 6.875rem;
+    padding-bottom: 6.875rem;
+}
+
+.section-faq {
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 992px) {
+    .section-faq {
+        grid-template-columns: 1fr 1fr;
+    }
+}
