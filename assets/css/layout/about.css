@@ -39,15 +39,6 @@
     }
 }
 
-.about-title {
-    color        : var(--black);
-    font-size    : 1.875rem;
-    font-weight  : 800;
-    grid-area    : title;
-    line-height  : 2.75rem;
-    margin-bottom: 1.5rem;
-}
-
 #service1 {
     grid-area: service1;
 }

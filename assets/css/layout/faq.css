@@ -1,6 +1,13 @@
 #faq {
-    padding-top   : 6.875rem;
-    padding-bottom: 6.875rem;
+    padding-top   : 5rem;
+    padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 992px) {
+    #faq {
+        padding-top   : 6.875rem;
+        padding-bottom: 6.875rem;
+    }
 }
 
 .section-faq {
@@ -11,4 +18,55 @@
     .section-faq {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+.faq-questions {}
+
+.faq-accordion-btn {
+    align-items     : baseline;
+    background      : transparent;
+    background-color: var(--white);
+    border          : 1px solid var(--white);
+    border-radius   : 2.5rem;
+    box-shadow      : 0px 2px 8px -4px rgba(0, 0, 0, 0.21);
+    cursor          : pointer;
+    display         : flex;
+    font-size       : 1.125rem;
+    font-weight     : 500;
+    justify-content : space-between;
+    letter-spacing  : 0;
+    line-height     : 1.125rem;
+    margin-bottom   : 0.5rem;
+    padding         : 1rem 1.5rem;
+    text-transform  : capitalize;
+    transition      : var(--transition);
+    width           : 100%;
+}
+
+.faq-accordion-btn::after {
+    color      : rgba(0, 0, 0, 0.3);
+    content    : "\002B";
+    font-weight: 500;
+    font-size  : 1.75rem;
+}
+
+.faq-questions p {
+    margin-bottom: 1rem;
+}
+
+.faq-panel {
+    background   : var(--white);
+    border-radius: 30px;
+    box-shadow   : 0px 2px 8px -4px rgba(0, 0, 0, 0.21);
+    padding      : 0px 1rem;
+    margin-bottom: 0.625rem;
+    max-height   : 0;
+    overflow     : hidden;
+    transition   : var(--transition);
+}
+
+.faq-panel ol li {
+    color        : rgba(0, 0, 0, 0.8);
+    margin-bottom: 0.625rem;
+    padding-left : 0.625rem;
 }
