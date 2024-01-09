@@ -31,7 +31,7 @@
     box-shadow      : 0px 2px 8px -4px rgba(0, 0, 0, 0.21);
     cursor          : pointer;
     display         : flex;
-    font-size       : 1.125rem;
+    font-size       : 1rem;
     font-weight     : 500;
     justify-content : space-between;
     letter-spacing  : 0;
@@ -40,7 +40,14 @@
     padding         : 1rem 1.5rem;
     text-transform  : capitalize;
     transition      : var(--transition);
+    text-align      : left;
     width           : 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .faq-accordion-btn {
+        font-size: 1.125rem;
+    }
 }
 
 .faq-accordion-btn::after {
@@ -48,9 +55,20 @@
     content    : "\002B";
     font-weight: 500;
     font-size  : 1.75rem;
+    transition : var(--transition);
 }
 
-.faq-questions p {
+.accordion-active {
+    background-color: var(--green-light);
+    color           : var(--white);
+}
+
+.accordion-active::after {
+    content: "\2212";
+    color  : var(--white);
+}
+
+.fa .faq-questions p {
     margin-bottom: 1rem;
 }
 
@@ -58,11 +76,14 @@
     background   : var(--white);
     border-radius: 30px;
     box-shadow   : 0px 2px 8px -4px rgba(0, 0, 0, 0.21);
-    padding      : 0px 1rem;
     margin-bottom: 0.625rem;
     max-height   : 0;
     overflow     : hidden;
-    transition   : var(--transition);
+    transition   : max-height 0.3s ease-out;
+}
+
+.faq-panel ol {
+    padding: 1rem;
 }
 
 .faq-panel ol li {

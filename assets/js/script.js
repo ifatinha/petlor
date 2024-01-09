@@ -45,3 +45,22 @@ function activeLink(link, index) {
 }
 
 linksMenu.forEach(activeLink);
+
+/** accordion section faq */
+const buttonsAccordion = document.querySelectorAll(".faq-accordion-btn");
+
+function openAccordion(ev) {
+    const button = ev.currentTarget;
+    button.classList.toggle("accordion-active");
+    const panel = button.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+    } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+}
+
+buttonsAccordion.forEach((button) => {
+    button.addEventListener("click", openAccordion);
+})
