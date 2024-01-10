@@ -63,4 +63,30 @@ function openAccordion(ev) {
 
 buttonsAccordion.forEach((button) => {
     button.addEventListener("click", openAccordion);
-})
+});
+
+/** modal */
+
+//open modal
+const btnModal = document.querySelector("#btnModal");
+const movieModal = document.querySelector("#movieModal");
+
+function openModal() {
+    movieModal.style.display = "flex";
+}
+
+btnModal.addEventListener("click", openModal);
+
+//close modal
+const btnCloseModal = document.querySelector("#btnCloseModal");
+btnCloseModal.addEventListener("click", () => {
+    movieModal.style.display = "none";
+});
+
+function closeModal(ev) {
+    if (ev.target === movieModal) {
+        movieModal.style.display = "none";
+    }
+}
+
+window.addEventListener("click", closeModal);

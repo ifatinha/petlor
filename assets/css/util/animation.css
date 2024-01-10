@@ -17,3 +17,15 @@
         box-shadow        : 0 0 0 0 rgba(0, 189, 86, 0);
     }
 }
+
+@keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+        transform        : scale(0);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        transform        : scale(1);
+    }
+}
