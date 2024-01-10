@@ -1,0 +1,14 @@
+#testimony {
+    background           : linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/comments-bg.jpg");
+    background-repeat    : no-repeat;
+    background-position  : center center;
+    background-size      : cover;
+    background-attachment: fixed;
+    min-height               : 90%;
+    padding              : 7rem 0;
+    text-align           : center;
+}
+
+#testimony .section-title {
+    color: var(--white);
+}
