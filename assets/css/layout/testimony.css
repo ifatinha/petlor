@@ -4,7 +4,7 @@
     background-position  : center center;
     background-size      : cover;
     background-attachment: fixed;
-    min-height           : 90%;
+    min-height           : 80%;
     padding              : 7rem 0;
     text-align           : center;
 }
@@ -19,7 +19,21 @@
 }
 
 .owl-dots {
-    margin-top      : 2rem;
+    margin-top: 2rem;
+}
+
+.owl-dots .owl-dot {
+    background-color: rgba(255, 255, 255, 0.1);
+    position        : relative;
+}
+
+.owl-dots .owl-dot::after {
+    content : "sa";
+    border  : 1px solid #e6e6e6;
+    bottom  : 0;
+    left    : -2px;
+    position: absolute;
+    right   : 0;
 }
 
 .testimony-carousel .item {
