@@ -95,6 +95,7 @@ window.addEventListener("click", closeModal);
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         loop: true,
+        margin: 10,
         responsiveClass: true,
         responsive: {
             0: {
