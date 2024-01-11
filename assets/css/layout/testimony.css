@@ -1,14 +1,28 @@
 #testimony {
-    background           : linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/comments-bg.jpg");
+    background           : linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/comments-bg.jpg");
     background-repeat    : no-repeat;
     background-position  : center center;
     background-size      : cover;
     background-attachment: fixed;
-    min-height               : 90%;
+    min-height           : 90%;
     padding              : 7rem 0;
     text-align           : center;
 }
 
 #testimony .section-title {
-    color: var(--white);
+    color        : var(--white);
+    margin-bottom: 4rem;
+}
+
+#testimony .owl-carousel .owl-nav {
+    display: none;
+}
+
+.owl-dots {
+    margin-top      : 2rem;
+}
+
+.testimony-carousel .item {
+    background-color: var(--white);
+    margin-right    : 2rem;
 }
