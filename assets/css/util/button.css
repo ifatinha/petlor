@@ -13,10 +13,11 @@
 }
 
 .btn-success {
-    background-color: var(--green);
-    border          : 1px solid var(--green);
+    background-color: var(--success);
+    border          : 1px solid var(--success);
 }
 
 .btn-success:hover {
-    background-color: transparent;
+    background-color: var(--green-light);
+    border-color    : var(--green-light);
 }

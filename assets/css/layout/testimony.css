@@ -11,7 +11,6 @@
 
 #testimony .section-title {
     color        : var(--white);
-    margin-bottom: 4rem;
     margin-top   : 6rem;
 }
 
@@ -82,8 +81,8 @@
 }
 
 .testimony-wrap p {
-    flex-grow : 1;
-    min-height: 120px;
+    flex-grow       : 1;
+    min-height      : 15ch;
 }
 
 .testimony-comment {
