@@ -114,3 +114,6 @@ $(document).ready(function () {
         }
     });
 });
+
+const buttonsCarousel = document.querySelectorAll(".owl-dots");
+console.log(buttonsCarousel);
