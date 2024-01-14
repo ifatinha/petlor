@@ -21,6 +21,10 @@
     cursor: pointer;
 }
 
+.blog-card:hover .blog-desc h2 {
+    color: var(--green);
+}
+
 .blog-img {
     height       : 250px;
     border-radius: 0.125rem;
@@ -58,4 +62,5 @@
     font-size    : 1.125rem;
     font-weight  : 400;
     margin-bottom: 1rem;
+    transition   : var(--transition);
 }
