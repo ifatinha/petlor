@@ -46,3 +46,45 @@
 .bg-light {
     background-color: #f8f9fd;
 }
+
+.modal {
+    align-items     : center;
+    background-color: rgba(0, 0, 0, 0.9);
+    display         : none;
+    min-height      : 100%;
+    inset           : 0;
+    justify-content : center;
+    overflow        : auto;
+    position        : fixed;
+    padding         : 0 0.5rem;
+    width           : 100%;
+    z-index         : 2;
+}
+
+.modal-content {
+    animation: zoom .6s;
+    display  : block;
+    margin   : auto;
+    max-width: 700px;
+    position : relative;
+    width    : 100%;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .modal-content {
+        margin-top: 5rem;
+    }
+}
+
+.btn-modal {
+    display   : inline-block;
+    font-size : 2rem;
+    position  : absolute;
+    right     : 10px;
+    top       : 0;
+    transition: var(--transition);
+}
+
+.btn-modal:hover {
+    color: var(--white);
+}

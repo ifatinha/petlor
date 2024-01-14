@@ -65,32 +65,6 @@ buttonsAccordion.forEach((button) => {
     button.addEventListener("click", openAccordion);
 });
 
-/** modal */
-
-//open modal
-const btnModal = document.querySelector("#btnModal");
-const movieModal = document.querySelector("#movieModal");
-
-function openModal() {
-    movieModal.style.display = "flex";
-}
-
-btnModal.addEventListener("click", openModal);
-
-//close modal
-const btnCloseModal = document.querySelector("#btnCloseModal");
-btnCloseModal.addEventListener("click", () => {
-    movieModal.style.display = "none";
-});
-
-function closeModal(ev) {
-    if (ev.target === movieModal) {
-        movieModal.style.display = "none";
-    }
-}
-
-window.addEventListener("click", closeModal);
-
 /** OwlCarousel */
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
@@ -115,5 +89,56 @@ $(document).ready(function () {
     });
 });
 
-const buttonsCarousel = document.querySelectorAll(".owl-dots");
-console.log(buttonsCarousel);
+/** modal functions */
+
+function openModal(element) {
+    element.style.display = "flex";
+}
+
+function closeModal(element) {
+    element.style.display = "none";
+}
+
+//open modal video
+const btnMovieModal = document.querySelector("#btnMovieModal");
+const movieModal = document.querySelector("#movieModal");
+
+btnMovieModal.addEventListener("click", () => {
+    openModal(movieModal);
+});
+
+//close modal
+const btnCloseModal = document.querySelector("#modalVideoClose");
+btnCloseModal.addEventListener("click", () => {
+    closeModal(movieModal);
+});
+
+/** modal gallery */
+const galleryModal = document.querySelector("#galleryModal");
+const linksImages = document.querySelectorAll(".gallery-card a");
+const imgModalOpen = document.querySelector("#imgModalOpen");
+const path = "assets/images/";
+
+linksImages.forEach((link) => {
+    link.addEventListener("click", () => {
+        imgModalOpen.setAttribute("src", `${path}${link.getAttribute("id")}.jpg`);
+        openModal(galleryModal);
+    })
+})
+
+const btnCloseGalleryModal = document.querySelector("#modalImgClose");
+btnCloseGalleryModal.addEventListener("click", () => {
+    closeModal(galleryModal);
+});
+
+/** close modal window */
+function closeModalWindow(ev) {
+    if (ev.target === movieModal) {
+        movieModal.style.display = "none";
+    } else if (ev.target === galleryModal) {
+        galleryModal.style.display = "none";
+    }
+}
+
+window.addEventListener("click", closeModalWindow);
+

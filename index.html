@@ -287,15 +287,15 @@
                 </div>
                 <div class="grid faq-media">
                     <img src="assets/images/faq-1.jpg" alt="Animals Image">
-                    <a href="#movieModal" aria-label="Button Movie" class="flex" id="btnModal">
+                    <a href="#movieModal" aria-label="Button Movie" class="flex btn-round" id="btnMovieModal">
                         <i class="fa-solid fa-play"></i>
                     </a>
                 </div>
-                <div class="movie-modal" id="movieModal">
+                <div class="modal" id="movieModal">
+                    <a href="#movieModal" aria-label="Close Modal" class="btn-modal" id="modalVideoClose">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
                     <div class="modal-content">
-                        <a href="#movieModal" aria-label="Close Modal" class="btn-modal" id="btnCloseModal">
-                            <i class="fa-solid fa-xmark"></i>
-                        </a>
                         <div class="video">
                             <video controls id="myVideo">
                                 <source src="assets/movies/movie.mp4" type="video/mp4">
@@ -490,6 +490,75 @@
             </div>
         </div>
     </section>
+
+    <!-- section gallery -->
+    <div class="section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Pets Gallery</h2>
+
+            <div class="grid gallery-cards">
+                <div class="gallery-card">
+                    <img src="assets/images/gallery-1.jpg" alt="Animal Photo">
+                    <a href="#gallery" class="btn-round flex btn-gallery" id="gallery-1">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                    <div class="gallery-desc">
+                        <span>#cat</span>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="assets/images/gallery-2.jpg" alt="Animal Photo">
+                    <a href="#gallery" class="btn-round flex btn-gallery" id="gallery-2">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                    <div class="gallery-desc">
+                        <span>#dog</span>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="assets/images/gallery-3.jpg" alt="Animal Photo">
+                    <a href="#gallery" class="btn-round flex btn-gallery" id="gallery-3">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                    <div class="gallery-desc">
+                        <span>#cat</span>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="assets/images/gallery-4.jpg" alt="Animal Photo">
+                    <a href="#gallery" class="btn-round flex btn-gallery" id="gallery-4">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                    <div class="gallery-desc">
+                        <span>#dog</span>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="assets/images/gallery-5.jpg" alt="Animal Photo">
+                    <a href="#gallery" class="btn-round flex btn-gallery" id="gallery-5">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                    <div class="gallery-desc">
+                        <span>#bird</span>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="assets/images/gallery-6.jpg" alt="Animal Photo">
+                    <a href="#gallery" class="btn-round flex btn-gallery" id="gallery-6">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                    <div class="gallery-desc">
+                        <span>#rabbit</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="galleryModal">
+                <a href="#gallery" aria-label="Close Modal" class="btn-modal" id="modalImgClose">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <div class="modal-content">
+                    <div class="modal-img">
+                        <img src="" alt="Pet Image" id="imgModalOpen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- scripts -->
     <script src="assets/util/OwlCarousel/docs/assets/vendors/jquery.min.js" defer></script>
     <script src="assets/util/OwlCarousel/dist/owl.carousel.min.js" defer></script>
