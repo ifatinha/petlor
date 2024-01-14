@@ -1,7 +1,5 @@
 #package {
     background: var(--light);
-    padding   : 7.5rem 0;
-    text-align: center;
 }
 
 .package-cards {
