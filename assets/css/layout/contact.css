@@ -12,11 +12,13 @@
 .contact-form {
     background: linear-gradient(45deg, #207dff 0%, #00bd55 100%);
     flex-basis: 100%;
+    opacity   : .8;
 }
 
 @media screen and (min-width: 992px) {
     .contact-form {
         flex-basis: 50%;
+        opacity   : 1;
     }
 }
 
@@ -26,7 +28,7 @@
 
 @media screen and (min-width: 992px) {
     .container-form {
-        padding: 3rem 12.5rem 3rem 3rem;
+        padding: 3rem 10rem 3rem 3rem;
     }
 }
 
@@ -65,7 +67,8 @@
 }
 
 .form-field {
-    width: 100%;
+    position: relative;
+    width   : 100%;
 }
 
 .form-control {
@@ -81,9 +84,29 @@
     width        : 100%;
 }
 
-#fselect {
+select.form-control {
     appearance: none;
-    grid-area : fselect;
+}
+
+textarea.form-control {
+    padding-top: 0.4rem;
+}
+
+.select-icon {
+    color    : var(--secondary);
+    font-size: 1rem;
+    position : absolute;
+    right    : 1rem;
+    top      : 30%;
+}
+
+.form-btn {
+    cursor: pointer;
+    width : 100%;
+}
+
+#fselect {
+    grid-area: fselect;
 }
 
 #fname {
