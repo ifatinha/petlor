@@ -29,3 +29,19 @@
         transform        : scale(1);
     }
 }
+
+@keyframes fadeInUp {
+    0% {
+        opacity          : 0;
+        visibility       : hidden;
+        -webkit-transform: translate3d(0, 40px, 0);
+        transform        : translate3d(0, 40px, 0);
+    }
+
+    100% {
+        visibility       : visible;
+        opacity          : 1;
+        -webkit-transform: none;
+        transform        : none;
+    }
+}
