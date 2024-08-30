@@ -130,10 +130,11 @@
 }
 
 .modal__menu {
+    @include mixins.flex(center, center);
     background-color: rgba($color: #000000, $alpha: 1);
-    height          : 100%;
+    height          : 0%;
     inset           : 0;
-    overflow        : hidden;
+    overflow        : auto;
     position        : fixed;
     transition      : .5s ease-in-out;
     width           : 100%;
@@ -146,15 +147,41 @@
         color        : map-get($map: colors.$theme-colors, $key: pure-white);
         cursor       : pointer;
         font-weight  : 500;
-        height       : 40px;
+        height       : 50px;
         position     : absolute;
         right        : 20px;
         top          : 20px;
-        width        : 40px;
+        width        : 50px;
     }
 
     &-navbar {
-        
+        margin: 0 auto;
+
+        li {
+            margin: 8px;
+
+            a {
+                @include typography.pixel-to-rem(20);
+                color         : map-get($map: colors.$theme-colors, $key: pure-white);
+                display       : inline-block;
+                font-weight   : 500;
+                padding       : 8px 0;
+                position      : relative;
+                text-align    : center;
+                text-transform: uppercase;
+                user-select   : none;
+                white-space   : nowrap;
+                width         : 100%;
+
+                &::before {
+                    content: "";
+                    width  : calc(100% + 6px);
+                    height : calc(100% - 16px);
+                    top    : 8px;
+                    left   : -3px;
+                }
+            }
+        }
     }
 }
 

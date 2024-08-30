@@ -309,10 +309,13 @@ ul {
 }
 
 .modal__menu {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   background-color: black;
-  height: 100%;
+  height: 0%;
   inset: 0;
-  overflow: hidden;
+  overflow: auto;
   position: fixed;
   transition: 0.5s ease-in-out;
   width: 100%;
@@ -325,12 +328,39 @@ ul {
   color: #ffffff;
   cursor: pointer;
   font-weight: 500;
-  height: 40px;
+  height: 50px;
   position: absolute;
   right: 20px;
   top: 20px;
-  width: 40px;
+  width: 50px;
 }
+.modal__menu-navbar {
+  margin: 0 auto;
+}
+.modal__menu-navbar li {
+  margin: 8px;
+}
+.modal__menu-navbar li a {
+  font-size: 1.25rem;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 500;
+  padding: 8px 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+  white-space: nowrap;
+  width: 100%;
+}
+.modal__menu-navbar li a::before {
+  content: "";
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+}
+
 .open-menu-modal {
   height: 100%;
 }
