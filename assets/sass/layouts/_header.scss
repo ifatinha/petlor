@@ -1,0 +1,163 @@
+@use "../global/colors";
+@use "../global/mixins";
+@use "../global/typography";
+@use "../util/queries";
+
+.header {
+    width: 100%;
+
+    &__contact {
+        background: linear-gradient(45deg, #007bff 0%, #28a745 100%);
+        width     : 100%;
+
+        &-container {
+            @include mixins.flex(center, space-between);
+            @include typography.pixel-to-rem(12);
+            color: map-get($map: colors.$theme-colors, $key: pure-white);
+
+            @include queries.devices(m) {
+                flex-direction : column;
+                justify-content: space-around;
+                padding        : 1rem 0 !important;
+            }
+        }
+
+        &-info {
+            flex: 1;
+
+            a {
+                margin-right: 0.5rem;
+                transition  : .3s ease-in-out;
+
+                &:hover {
+                    color: map-get($map: colors.$theme-colors, $key: muted-gray);
+                }
+            }
+        }
+
+        &-social {
+            @include mixins.flex(center, end);
+            flex: 1;
+
+            @include queries.devices(m) {
+                justify-content: center;
+            }
+
+            li {
+                @include mixins.flex(center, center);
+                @include typography.pixel-to-rem(14);
+                cursor    : pointer;
+                height    : 40px;
+                transition: .3s ease-in-out;
+                width     : 40px;
+
+                &:hover {
+                    background: map-get($map: colors.$theme-colors, $key: forest-green);
+                }
+            }
+        }
+    }
+
+    &__navbar {
+        background-color: map-get($map: colors.$theme-colors, $key: light-gray);
+        box-shadow      : #000000 0px 5px 20px -17px;
+        color           : map-get($map: colors.$theme-colors, $key: base-black);
+        padding         : 0 .5rem;
+        position        : relative;
+        width           : 100%;
+
+        &-wrap {
+            @include mixins.flex(center, space-between);
+            width: 100%;
+        }
+
+        &-brand {
+            @include mixins.flex(center, center);
+            @include typography.pixel-to-rem(28);
+            font-weight: 800;
+            gap        : 1rem;
+            padding    : 4px 0;
+
+            i {
+                color: map-get($map: colors.$theme-colors, $key: forest-green);
+            }
+        }
+
+        &-list {
+            @include mixins.flex(center, end);
+
+            @include queries.devices-t-and-m() {
+                display: none;
+            }
+
+            li {
+                position  : relative;
+                transition: .3s ease-in-out;
+
+                &::after {
+                    content   : "";
+                    background: map-get($map: colors.$theme-colors, $key: forest-green);
+                    display   : block;
+                    height    : 2px;
+                    transition: .3s ease-in-out;
+                    width     : 0%;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+
+                a {
+                    display       : inline-block;
+                    font-weight   : 700;
+                    padding       : 2rem 1.125rem;
+                    text-transform: uppercase;
+                    transition    : .3s ease-in-out;
+                }
+            }
+
+            .activated {
+                &::after {
+                    width: 100%;
+                }
+
+                a {
+                    color: map-get($map: colors.$theme-colors, $key: forest-green);
+                }
+            }
+        }
+    }
+}
+
+.modal__menu {
+    background-color: rgba($color: #000000, $alpha: 1);
+    height          : 100%;
+    inset           : 0;
+    overflow        : hidden;
+    position        : fixed;
+    transition      : .5s ease-in-out;
+    width           : 100%;
+    z-index         : 9999;
+
+    &-close {
+        border       : 2px solid map-get($map: colors.$theme-colors, $key: fresh-green);
+        background   : rgba($color: #000000, $alpha: .4);
+        border-radius: 50%;
+        color        : map-get($map: colors.$theme-colors, $key: pure-white);
+        cursor       : pointer;
+        font-weight  : 500;
+        height       : 40px;
+        position     : absolute;
+        right        : 20px;
+        top          : 20px;
+        width        : 40px;
+    }
+
+    &-navbar {
+        
+    }
+}
+
+.open-menu-modal {
+    height: 100%;
+}
