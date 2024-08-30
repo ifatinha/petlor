@@ -176,11 +176,56 @@ ul {
 
 .visually-hidden {
   font-family: "Poppins", sans-serif;
-  color: #ffffff;
+  color: #000000;
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1;
   margin-right: 10px;
+}
+
+.btn {
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  line-height: 1.125rem;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-success {
+  background-color: #00bd56;
+  border: 1px solid #00bd56;
+}
+.btn-success:hover {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-round {
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
+  height: 60px;
+  justify-content: center;
+  position: absolute;
+  width: 60px;
+}
+
+.btn-gallery {
+  background: var(--green-light);
+  color: var(--white);
+  cursor: zoom-in;
+  opacity: 0;
+  right: 50%;
+  transition: var(--transition);
+  transform: translate(50%, 50%);
+  top: 40%;
+  z-index: 1;
 }
 
 .header {
@@ -194,7 +239,7 @@ ul {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #ffffff;
 }
 @media screen and (max-width: 767px) {
@@ -295,11 +340,12 @@ ul {
   width: 100%;
 }
 .header__navbar-list li a {
+  font-size: 0.875rem;
   display: inline-block;
   font-weight: 700;
-  padding: 2rem 1.125rem;
+  padding: 1rem 1.125rem;
   text-transform: uppercase;
-  transition: 0.3s ease-in-out;
+  transition: 1s ease-in-out;
 }
 .header__navbar-list .activated::after {
   width: 100%;
@@ -363,6 +409,35 @@ ul {
 
 .open-menu-modal {
   height: 100%;
+}
+
+.main {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+}
+.main__title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 auto 1.5rem;
+  max-width: 24ch;
+  text-transform: capitalize;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .main__title {
+    font-size: 3.125rem;
+  }
 }
 
 .container {

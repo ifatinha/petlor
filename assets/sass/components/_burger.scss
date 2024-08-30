@@ -70,7 +70,7 @@
 
 .visually-hidden {
     @include typography.font(18);
-    color       : map-get($map: colors.$theme-colors, $key: pure-white);
+    color       : map-get($map: colors.$theme-colors, $key: base-black);
     font-size   : 1.125rem;
     font-weight : 700;
     line-height : 1;
