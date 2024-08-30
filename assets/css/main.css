@@ -345,7 +345,10 @@ ul {
   font-weight: 700;
   padding: 1rem 1.125rem;
   text-transform: uppercase;
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.header__navbar-list li a:hover {
+  color: #28a745;
 }
 .header__navbar-list .activated::after {
   width: 100%;
