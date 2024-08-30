@@ -63,7 +63,6 @@
         box-shadow      : #000000 0px 5px 20px -17px;
         color           : map-get($map: colors.$theme-colors, $key: base-black);
         padding         : 0 .5rem;
-        position        : relative;
         width           : 100%;
 
         &-wrap {
@@ -192,4 +191,10 @@
 
 .open-menu-modal {
     height: 100%;
+}
+
+.stick-menu {
+    position: fixed;
+    top     : 0;
+    width   : 100%;
 }
