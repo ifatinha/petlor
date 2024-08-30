@@ -1,0 +1,129 @@
+@use "../global/colors";
+@use "../global/typography";
+@use "../global/mixins";
+@use "../util/queries";
+
+.modal {
+    background-color: map-get($map: colors.$theme-color, $key: pure-white);
+    left            : -300px;
+    position        : fixed;
+    padding         : 60px 30px;
+    transition      : .3s ease-in-out;
+    width           : 245px;
+    z-index         : 10000;
+
+    @include queries.devices(m) {
+        padding-bottom: 30px;
+        padding-top   : 30px;
+    }
+
+    &__close-btn {
+        @include typography.font(12);
+        background: map-get($map: colors.$theme-color, $key: absolute-black);
+        border    : none;
+        cursor    : pointer;
+        height    : 24px;
+        overflow  : hidden;
+        position  : absolute;
+        right     : 0;
+        top       : 0;
+        width     : 24px;
+
+        &::after,
+        &::before {
+            background: map-get($map: colors.$theme-color, $key: pure-white);
+            content   : "";
+            height    : 55%;
+            left      : 48%;
+            position  : absolute;
+            top       : 22%;
+            width     : 1px;
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.modal__navbar {
+    @include mixins.display-flex(start, space-between);
+    flex-direction: column;
+
+    &-brand {
+        margin-bottom: 40px;
+        max-width    : 156px;
+
+        @include queries.devices(m) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &-menu {
+        border-top   : 1px solid rgba($color: #000000, $alpha: 0.1);
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+        overflow     : auto;
+        padding      : 30px 0;
+        width        : 100%;
+
+        @include queries.devices(m) {
+            max-height: 220px !important;
+            padding   : 20px 0;
+        }
+
+        li {
+            margin: 8px 0;
+            width : 100%;
+
+            a {
+                @include typography.font(14);
+                color         : map-get($map: colors.$theme-color, $key: steel-gray);
+                font-weight   : 600;
+                text-transform: uppercase;
+
+                span {
+                    color       : map-get($map: colors.$theme-color, $key: dim-gray);
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    &-social {
+        @include mixins.display-flex(center, start);
+        margin-top: 30px;
+        width     : 100%;
+
+        @include queries.devices(m) {
+            margin-bottom: 1rem;
+        }
+
+        li {
+            a {
+                color  : map-get($map: colors.$theme-color, $key: charcoal);
+                display: inline-block;
+                margin : 0 12px;
+            }
+        }
+    }
+}
+
+.open-modal {
+    left: 60px !important;
+
+    @include queries.devices-t-and-m {
+        left: 0 !important;
+    }
+}
+
+.active-menu {
+    color: map-get($map: colors.$theme-color, $key: velvety-black);
+
+    span {
+        color: map-get($map: colors.$theme-color, $key: intense-red);
+    }
+}
