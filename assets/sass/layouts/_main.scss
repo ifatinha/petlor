@@ -13,16 +13,16 @@
 
     &__title {
         @include typography.pixel-to-rem(40);
-        color           : map-get($map: colors.$theme-colors, $key: pure-white);
-        font-weight     : 800;
-        line-height     : 1.2;
-        margin          : 0 auto 1.5rem;
-        max-width       : 24ch;
-        text-transform  : capitalize;
-        width           : 100%;
+        color         : map-get($map: colors.$theme-colors, $key: pure-white);
+        font-weight   : 800;
+        line-height   : 1.2;
+        margin        : 0 auto 1.5rem;
+        max-width     : 24ch;
+        text-transform: capitalize;
+        width         : 100%;
 
         @include queries.devices(l) {
-            @include typography.pixel-to-rem(50);
+            @include typography.pixel-to-rem(60);
         }
     }
 }

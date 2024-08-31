@@ -1,0 +1,47 @@
+@use "../global/colors";
+@use "../global/mixins";
+@use "../global/typography";
+@use "../util/queries";
+
+#counter {
+    background    : map-get($map: colors.$theme-colors, $key: fresh-green);
+    padding-bottom: 3.75rem;
+    padding-top   : 3.75rem;
+    width         : 100%;
+}
+
+.counter {
+    @include mixins.grid(1fr);
+    align-items  : center;
+    justify-items: center;
+
+    @include queries.devices(l) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include queries.devices(t) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__card {
+        color           : map-get($map: colors.$theme-colors, $key: pure-white);
+        margin-bottom   : 2rem;
+        padding         : 0 1rem;
+        text-align      : center;
+
+        @include queries.devices(l) {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            @include typography.pixel-to-rem(50);
+            font-weight  : 700;
+            line-height  : 50px;
+            margin-bottom: 6px;
+        }
+
+        span {
+            @include typography.pixel-to-rem(16);
+        }
+    }
+}
