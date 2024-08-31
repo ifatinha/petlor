@@ -5,6 +5,7 @@
 
 .intro {
     background: map-get($map: colors.$theme-colors, $key: cotton-mist);
+    padding   : 0 0 5rem;
     width     : 100%;
 
     &__container {

@@ -1,13 +1,17 @@
 @use "sass:math";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 $font-01: 'Poppins',
+sans-serif;
+$font-02: "Montserrat",
 sans-serif;
 
 @function rem($pixel, $context: 16) {
    @return math.div($pixel, $context) * 1rem;
 }
 
-$typography-sizes: (12:rem(12),
+$typography-sizes: (
+   12:rem(12),
    14:rem(14),
    16:rem(16),
    20:rem(20),
@@ -27,7 +31,23 @@ $typography-sizes: (12:rem(12),
    @else {
       @warn "Size #{$size}px não está definido em $typography-sizes."
    }
-};
+}
+
+;
+
+@mixin font-02($size) {
+   font-family: $font-02;
+
+   @if map-has-key($map: $typography-sizes, $key: $size) {
+      font-size: map-get($map: $typography-sizes, $key: $size);
+   }
+
+   @else {
+      @warn "Size #{$size}px não está definido em $typography-sizes."
+   }
+}
+
+;
 
 
 @mixin pixel-to-rem($size) {

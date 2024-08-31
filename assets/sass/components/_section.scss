@@ -1,0 +1,25 @@
+@use "../util/queries";
+@use "../global/colors";
+@use "../global/typography";
+
+.section {
+    width: 100%;
+}
+
+.section__title {
+    @include typography.pixel-to-rem(30);
+    color        : map-get($map: colors.$theme-colors, $key: base-black);
+    font-weight  : 800;
+    line-height  : 2.75rem;
+    margin-bottom: 24px;
+}
+
+.section__center {
+    padding   : 5rem 0;
+    text-align: center;
+
+    @include queries.devices(l) {
+        padding: 7rem 0;
+    }
+
+}
