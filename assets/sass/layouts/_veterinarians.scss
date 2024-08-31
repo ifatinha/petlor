@@ -1,0 +1,97 @@
+@use "../global/colors";
+@use "../global/mixins";
+@use "../global/typography";
+@use "../util/queries";
+
+#veterinarian {
+    color: map-get($map: colors.$theme-colors, $key: cotton-mist);
+}
+
+.veterinarins__wrap {
+    @include mixins.grid(1fr);
+    gap       : 2rem;
+    margin-top: 4rem;
+
+    @include queries.devices(l) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include queries.devices(t) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.veterinarins__card {
+    border-radius: 0.25rem;
+    box-shadow   : 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
+    overflow     : hidden;
+    transition   : .3s ease-in-out;
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+
+    &-img {
+        height    : 300px;
+        overflow  : hidden;
+        transition: .3s ease-in-out;
+        width     : 100%;
+
+        img {
+            border-top-left-radius : 0.25rem;
+            border-top-right-radius: 0.25rem;
+            height                 : 100%;
+            object-fit             : cover;
+            transition             : .4s ease-in-out;
+        }
+    }
+
+    &-desc {
+        background: map-get($map: colors.$theme-colors, $key: pure-white);
+        padding   : 1rem;
+        text-align: center;
+        transition: .3s ease-in-out;
+
+        h2 {
+            @include typography.pixel-to-rem(18);
+            color      : map-get($map: colors.$theme-colors, $key: base-black);
+            font-weight: 700;
+        }
+
+        span {
+            color        : map-get($map: colors.$theme-colors, $key: forest-green);
+            display      : inline-block;
+            font-weight  : 500;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            @include typography.pixel-to-rem(14);
+            color      : map-get($map: colors.$theme-colors, $key: neutral-gray);
+            line-height: 27px;
+            text-align : center;
+        }
+    }
+
+    &-social {
+        @include mixins.flex(center, center);
+        gap       : 1rem;
+        margin-top: 1rem;
+
+        a {
+            @include typography.pixel-to-rem(18);
+            color     : map-get($map: colors.$theme-colors, $key: forest-green);
+            transition: .3s ease-in-out;
+
+            i {
+                transition: .3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

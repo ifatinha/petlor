@@ -29,3 +29,16 @@
     --breakpoint-xl: 1200px;
     --transition   : .3s all ease;
 }
+
+/* 
+.bg-green-light {
+    background-color: var(--green-light);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-light {
+    background-color: #f8f9fd;
+} */
