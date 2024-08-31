@@ -35,7 +35,7 @@ $t-device : 768px;
 }
 
 @mixin landscape() {
-   @media only screen and (orientation: landscape) and (max-width: ($l-device)) {
+   @media only screen and (orientation: landscape) and (max-width: ($t-device)) {
       @content
    }
 }

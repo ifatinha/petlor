@@ -9,21 +9,24 @@
 
     &__container {
         @include mixins.grid(1fr);
-        gap     : 2rem;
-        padding : 3.75rem 0px;
+        gap     : 6rem;
         position: relative;
+        top     : -60px;
         width   : 100%;
 
         @include queries.devices(l) {
             grid-template-columns: repeat(3, 1fr);
-            padding              : 0px 0px 5rem;
-            top                  : -60px;
+            gap                  : 2rem;
         }
 
         @include queries.devices(t) {
             grid-template-columns: repeat(2, 1fr);
             justify-content      : center;
-            padding              : 7.5rem 0px 5rem;
+        }
+
+        @include queries.landscape() {
+            padding: 5rem 0;
+            top    : 0;
         }
     }
 
@@ -34,13 +37,13 @@
         border-radius : 0.25rem;
         box-shadow    : 0px 8px 20px -10px rgba(0, 0, 0, 0.15);
         color         : map-get($map: colors.$theme-colors, $key: base-black);
+        cursor        : pointer;
         flex-direction: column;
         gap           : 1.25rem;
         line-height   : 1.75;
-        margin-bottom : 4rem;
-        min-height    : 300px;
-        padding       : 2rem;
-        transition    : .4s ease-in-out;
+        min-height    : 280px;
+        padding       : 1rem;
+        transition    : .3s ease-in-out;
         text-align    : center;
 
         &:nth-child(1) {
@@ -65,23 +68,23 @@
             }
         }
 
-        &:hover {
+        &:hover:not(&:nth-child(1)) {
             background: map-get($map: colors.$theme-colors, $key: fresh-green);
-            cursor    : pointer;
-        }
 
-        &:hover &-icon {
-            background: map-get($map: colors.$theme-colors, $key: pure-white);
-        }
 
-        &:hover &-desc {
-            color: map-get($map: colors.$theme-colors, $key: pure-white);
-        }
+            .intro__card-icon {
+                background: map-get($map: colors.$theme-colors, $key: pure-white);
+            }
 
-        &:hover &-btn {
-            background : map-get($map: colors.$theme-colors, $key: pure-white);
-            color      : map-get($map: colors.$theme-colors, $key: fresh-green);
-            margin-left: 0.5rem;
+            .intro__card-desc {
+                color: map-get($map: colors.$theme-colors, $key: pure-white);
+            }
+
+            .intro__card-btn {
+                background : map-get($map: colors.$theme-colors, $key: pure-white);
+                color      : map-get($map: colors.$theme-colors, $key: fresh-green);
+                margin-left: 0.5rem;
+            }
         }
 
         &-icon {
@@ -89,14 +92,19 @@
             background   : map-get($map: colors.$theme-colors, $key: light-gray);
             border-radius: 50%;
             height       : 80px;
-            margin-top   : -28%;
-            transition   : .4s ease-in-out;
+            margin-top   : -20%;
+            transition   : .2s ease-in-out;
             width        : 80px;
+
 
             @include queries.devices(l) {
                 height    : 100px;
-                margin-top: -30%;
+                margin-top: -20%;
                 width     : 100px;
+            }
+
+            @include queries.landscape() {
+                margin-top: -10%;
             }
 
             i {
@@ -106,13 +114,13 @@
         }
 
         &-desc {
-            flex-grow: 1;
+            flex-grow : 1;
+            transition: .3s ease-in-out;
 
             h2 {
                 @include typography.pixel-to-rem(20);
                 font-weight  : 700;
                 margin-bottom: .5rem;
-                transition   : .4s ease-in-out;
             }
         }
 
@@ -122,11 +130,19 @@
             color        : map-get($map: colors.$theme-colors, $key: pure-white);
             box-shadow   : 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
             border-radius: 50%;
-            bottom       : -20%;
+            bottom       : -14%;
             height       : 50px;
             position     : relative;
-            transition   : .4s ease-in-out;
+            transition   : .3s ease-in-out;
             width        : 50px;
+
+            @include queries.devices(l) {
+                bottom: -16%;
+            }
+
+            @include queries.landscape() {
+                bottom: -16%;
+            }
         }
     }
 }
