@@ -1,8 +1,9 @@
 // break points
-$l-device: 1024px;
-$t-device: 768px;
+$l-device : 1024px;
+$t-device : 768px;
 
 @mixin devices($size) {
+
    @if($size==l) {
       @media screen and (min-width: $l-device) {
          @content;
@@ -38,3 +39,5 @@ $t-device: 768px;
       @content
    }
 }
+
+;
