@@ -33,6 +33,7 @@
     height         : 60px;
     justify-content: center;
     position       : absolute;
+    text-align     : center;
     width          : 60px;
 
     @include queries.devices(l) {
