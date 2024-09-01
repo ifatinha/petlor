@@ -1,0 +1,55 @@
+@keyframes pulse {
+    0% {
+        -moz-box-shadow   : 0 0 0 0 rgba(0, 189, 86, 0.4);
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 189, 86, 0.4);
+        box-shadow        : 0 0 0 0 rgba(0, 189, 86, 0.4);
+    }
+
+    70% {
+        -moz-box-shadow   : 0 0 0 30px rgba(0, 189, 86, 0);
+        -webkit-box-shadow: 0 0 0 30px rgba(0, 189, 86, 0);
+        box-shadow        : 0 0 0 30px rgba(0, 189, 86, 0);
+    }
+
+    100% {
+        moz-box-shadow    : 0 0 0 0 rgba(0, 189, 86, 0);
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 189, 86, 0);
+        box-shadow        : 0 0 0 0 rgba(0, 189, 86, 0);
+    }
+}
+
+@mixin pulse() {
+    animation: pulse 2s infinite;
+}
+
+@keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+        transform        : scale(0);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        transform        : scale(1);
+    }
+}
+
+@mixin zoom() {
+    animation: pulse .6s infinite;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity          : 0;
+        visibility       : hidden;
+        -webkit-transform: translate3d(0, 40px, 0);
+        transform        : translate3d(0, 40px, 0);
+    }
+
+    100% {
+        visibility       : visible;
+        opacity          : 1;
+        -webkit-transform: none;
+        transform        : none;
+    }
+}

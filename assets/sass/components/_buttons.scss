@@ -1,5 +1,6 @@
 @use "../global/colors";
 @use "../global/typography";
+@use "../util/queries";
 
 .btn {
     @include typography.pixel-to-rem(14);
@@ -33,6 +34,11 @@
     justify-content: center;
     position       : absolute;
     width          : 60px;
+
+    @include queries.devices(l) {
+        height: 70px;
+        width : 70px;
+    }
 }
 
 .btn-gallery {
