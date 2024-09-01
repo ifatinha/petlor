@@ -1,4 +1,5 @@
 @use "../global/colors";
+@use "../util/queries";
 
 .modal {
     align-items     : center;
@@ -7,18 +8,11 @@
     min-height      : 100%;
     inset           : 0;
     justify-content : center;
-    overflow        : auto;
+    overflow        : hidden;
     position        : fixed;
     padding         : 0 0.5rem;
     width           : 100%;
     z-index         : 9999999;
-
-    &__content {
-        animation: zoom .6s;
-        display  : block;
-        position : relative;
-        width    : 100%;
-    }
 
     &__btn {
         display   : inline-block;
@@ -32,8 +26,20 @@
             color: map-get($map: colors.$theme-colors, $key: pure-white);
         }
     }
+
+    &__content {
+        animation: zoom .6s;
+        display  : block;
+        height   : 80%;
+        position : relative;
+        width    : 100%;
+
+        @include queries.landscape() {
+            height: 70%;
+        }
+    }
 }
 
-.open-modal{
+.open-modal {
     display: flex;
 }
