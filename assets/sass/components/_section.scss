@@ -3,7 +3,7 @@
 @use "../global/typography";
 
 .section {
-    
+
     width: 100%;
 }
 
@@ -12,6 +12,7 @@
     color        : map-get($map: colors.$theme-colors, $key: base-black);
     font-weight  : 800;
     line-height  : 2.75rem;
+    margin-bottom: 48px;
 }
 
 .section__center {

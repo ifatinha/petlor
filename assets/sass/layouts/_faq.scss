@@ -25,8 +25,8 @@
 
         &-paragraph {
             @include typography.font-02(16);
-            color : map-get($map: colors.$theme-colors, $key: neutral-gray);
-            margin: 32px 0;
+            color        : map-get($map: colors.$theme-colors, $key: neutral-gray);
+            margin-bottom: 32px;
         }
     }
 }
@@ -35,6 +35,10 @@
 
     @include queries.devices(m) {
         order: 2;
+    }
+
+    .section__title {
+        margin-bottom: 0;
     }
 
     .faq__accordion {
@@ -153,8 +157,8 @@
 }
 
 .faq__video {
-    height    : 100%;
-    width     : 100%;
+    height: 100%;
+    width : 100%;
 
     video {
         height         : 100%;

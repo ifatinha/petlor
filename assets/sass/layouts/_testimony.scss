@@ -8,8 +8,7 @@
     background-attachment: fixed;
 
     .section__title {
-        color        : map-get($map: colors.$theme-colors, $key: pure-white);
-        margin-bottom: 3rem;
+        color: map-get($map: colors.$theme-colors, $key: pure-white);
     }
 
     &__container {

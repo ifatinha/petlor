@@ -1,0 +1,96 @@
+@use "../global/mixins";
+@use "../global/colors";
+@use "../global/typography";
+@use "../util/queries";
+
+.package {
+    background: map-get($map: colors.$theme-colors, $key: cotton-mist);
+
+    &__container {
+        @include mixins.grid(repeat(3, 1fr));
+        gap: 2rem;
+
+        @include queries.devices(m) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card {
+        background   : map-get($map: colors.$theme-colors, $key: pure-white);
+        box-shadow   : 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
+        border-radius: 0.25rem;
+
+        @include queries.devices(m) {
+            margin-bottom: 2rem;
+        }
+
+        &-img {
+            border-radius: 0.25rem;
+            height       : 250px;
+            width        : 100%;
+
+            img {
+                border-top-left-radius : 0.25rem;
+                border-top-right-radius: 0.25rem;
+                height                 : 100%;
+                object-fit             : cover;
+                object-position        : center;
+                width                  : 100%;
+            }
+        }
+
+        &-desc {
+            padding: 1.5rem;
+
+            h2 {
+                @include typography.pixel-to-rem(16);
+                color         : map-get($map: colors.$theme-colors, $key: fresh-green);
+                font-weight   : 600;
+                text-transform: uppercase;
+            }
+
+            p {
+                @include typography.font-02(16);
+            }
+
+            p sup {
+                @include typography.pixel-to-rem(24);
+                color   : map-get($map: colors.$theme-colors, $key: medium-gray);
+                display : inline-block;
+                position: relative;
+                top     : -1em;
+            }
+
+            p span {
+                @include typography.pixel-to-rem(60);
+                color      : map-get($map: colors.$theme-colors, $key: base-black);
+                font-weight: 600;
+            }
+
+            p sub {
+                @include typography.pixel-to-rem(12);
+                color      : map-get($map: colors.$theme-colors, $key: medium-gray);
+                line-height: 0px;
+            }
+        }
+
+        &-list {
+            margin-bottom: 3rem;
+
+            li {
+                @include typography.font-02(16);
+                line-height: 28px;
+                padding    : 10px 0;
+
+                &:nth-child(2n+1) {
+                    background: rgba(0, 0, 0, 0.05);
+                }
+
+                i {
+                    color       : map-get($map: colors.$theme-colors, $key: primary-blue);
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}

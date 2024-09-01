@@ -9,6 +9,4 @@ export function openVideo() {
     setupModalToggle(btnOpenModal, faqModal);
     setupModalToggle(btnCloseModal, faqModal);
 
-    console.log(video);
-
 }
