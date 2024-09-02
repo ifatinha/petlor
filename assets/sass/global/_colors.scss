@@ -1,7 +1,6 @@
 @use "sass:map";
 
-$theme-colors: (
-    alert-red: #dc3545,
+$theme-colors: (alert-red: #dc3545,
     base-black: #000000,
     cotton-mist:#f8f9fd,
     dark-gray: #343a40,
@@ -13,6 +12,7 @@ $theme-colors: (
     light-gray: #f8f9fa,
     medium-gray: #b3b3b3,
     muted-gray: #999999,
+    muted_slate: #808080,
     neutral-gray: #6c757d,
     ocean-cyan: #17a2b8,
     primary-blue: #007bff,
@@ -25,5 +25,4 @@ $theme-colors: (
     shadow-gray: #343a40,
     sea-teal: #20c997,
     warning-yellow: #ffc107,
-    vibrant-pink: #e83e8c
-    );
+    vibrant-pink: #e83e8c);

@@ -10,8 +10,9 @@
 .contact__info {
 
     @include mixins.grid(1fr);
-    gap             : 32px;
-    margin-bottom   : 60px;
+    gap          : 32px;
+    margin-bottom: 80px;
+    margin-top   : 40px;
 
     @include queries.devices(l) {
         grid-template-columns: repeat(4, 1fr);
@@ -22,6 +23,56 @@
     }
 
     &-item {
-        background: plum;
+        @include mixins.flex(center, start);
+        flex-direction: column;
+
+        span {
+            @include typography.font-02(15);
+            color      : map-get($map: colors.$theme-colors, $key: base-black);
+            font-weight: 500;
+            line-height: 28px;
+            text-align : center;
+
+            address,
+            a {
+                color: map-get($map: colors.$theme-colors, $key:forest-green);
+            }
+
+            address {
+                display: inline;
+            }
+        }
+    }
+
+    &-icon {
+        @include mixins.flex(center, center);
+        @include typography.pixel-to-rem(20);
+        background   : map-get($map: colors.$theme-colors, $key: fresh-green);
+        color        : map-get($map: colors.$theme-colors, $key: pure-white);
+        border-radius: 50%;
+        height       : 60px;
+        margin-bottom: 18px;
+        width        : 60px;
+    }
+}
+
+.contact__message {
+    @include mixins.grid(1fr);
+
+    @include queries.devices(l) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &-form {
+        padding: 48pxs;
+
+        h2 {
+            @include typography.font-02(28);
+            color        : map-get($map: colors.$theme-colors, $key: base-black);
+            font-weight  : 500;
+            line-height  : 42px;
+            margin-bottom: 24px;
+            text-align   : left;
+        }
     }
 }
