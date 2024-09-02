@@ -11,28 +11,17 @@
 
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
-        rel="stylesheet">
-
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="assets/util/OwlCarousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/util/OwlCarousel/dist/assets/owl.theme.default.min.css">
-
     <!-- css -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>Petlor</title>
 </head>
 
 <body>
     <!-- start header -->
     <header class="header">
-        <div class="header-contact">
-            <div class="container header-info flex">
-                <div class="row" id="header-contact">
+        <div class="header__contact">
+            <div class="container header__contact-container">
+                <div class="header__contact-info">
                     <a href="tel:+001234567">
                         <i class="fa-solid fa-phone"></i>
                         +00 1234 5678
@@ -43,165 +32,182 @@
                     </a>
                 </div>
 
-                <div class="row">
-                    <ul class="flex header-list">
-                        <li class="flex">
-                            <a href="http://www.facebook.com/petlor1" aria-label="Facebook" target="_blank">
-                                <i class="fa-brands fa-facebook-f"></i></a>
-                        </li>
-                        <li class="flex">
-                            <a href="http://www.twitter.com/petlor1" aria-label="Twitter" target="_blank">
-                                <i class="fa-brands fa-twitter"></i></a>
-                        </li>
-                        <li class="flex">
-                            <a href="https://wa.me/5583912345678?text=Welcome+to+Petlor." aria-label="Chat on WhatsApp"
-                                target="_blank">
-                                <i class="fa-brands fa-square-whatsapp"></i></a>
-                        </li>
-                        <li class="flex">
-                            <a href="http://www.instagram.com/petlor1" aria-label="Instagram" target="_blank">
-                                <i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                        <li class="flex">
-                            <a href="http://www.youtube.com/petlor1" aria-label="Youtube" target="_blank">
-                                <i class="fa-brands fa-youtube"></i></a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="header__contact-social">
+                    <li>
+                        <a href="http://www.facebook.com/petlor1" aria-label="Facebook" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com/petlor1" aria-label="Twitter" target="_blank">
+                            <i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/5583912345678?text=Welcome+to+Petlor." aria-label="Chat on WhatsApp"
+                            target="_blank">
+                            <i class="fa-brands fa-square-whatsapp"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://www.instagram.com/petlor1" aria-label="Instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://www.youtube.com/petlor1" aria-label="Youtube" target="_blank">
+                            <i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <nav class="header-menu">
-            <div class="container flex header-menu-wrap">
-                <a href="index.html" class="flex header-brand">
+        <nav class="header__navbar">
+            <div class="container header__navbar-wrap">
+
+                <a href="index.html" class="header__navbar-brand">
                     <span class="brand-icon"><i class="fa-solid fa-paw"></i></span>
                     Petlor
                 </a>
 
                 <!-- navbar desktop -->
-                <div id="desktop-navbar">
-                    <ul class="flex header-navbar">
-                        <li class="link-active"><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#veterinarian">Veterinarian</a></li>
-                        <li><a href="#faq">Faq</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#package">Packages</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+                <ul class="header__navbar-list" id="navbar">
+                    <li class="activated"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#veterinarian">Veterinarian</a></li>
+                    <li><a href="#faq">Faq</a></li>
+                    <li><a href="#package">Packages</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
 
-                <!-- navbar mobile -->
-                <div id="mobile-navbar">
-                    <div class="menu-mobile">
-                        <div class="bar" id="bar1"></div>
-                        <div class="bar" id="bar2"></div>
-                        <div class="bar" id="bar3"></div>
-                    </div>
-
-                    <div class="overlay">
-                        <ul class="flex sidenav">
-                            <li class="link-active"><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#veterinarian">Veterinarian</a></li>
-                            <li><a href="#faq">Faq</a></li>
-                            <li><a href="#gallery">Gallery</a></li>
-                            <li><a href="#package">Packages</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <button class="menu-bugger" type="button" id="menu-bugger" aria-controls="modal-menu"
+                    aria-label="Abrir menu" aria-expanded="false" aria-haspopup="true">
+                    <span class="visually-hidden">Menu</span>
+                    <i class="menu-bugger__bars" aria-hidden="true"></i>
+                </button>
             </div>
         </nav>
     </header>
     <!-- end header -->
 
-    <!-- start main -->
+    <!-- start modal menu mobile -->
+    <div class="modal__menu" id="modal-bugger">
+        <button type="button" class="modal__menu-close" id="close-menu">
+            X
+        </button>
+        <ul class="modal__menu-navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#veterinarian">Veterinarian</a></li>
+            <li><a href="#faq">Faq</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#package">Packages</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <!-- end modal menu mobile -->
+
+    <!-- start main section -->
     <main class="main">
-        <div class="main-overlay"></div>
-        <div class="container flex main-container">
-            <div class="main-row flex">
-                <h1 class="main-title">Highest Quality Care For Pets You'll Love</h1>
-                <a href="#" class="btn btn-success">Learn More</a>
-            </div>
+        <div class="container">
+            <h1 class="main__title">Highest Quality Care For Pets You'll Love</h1>
+            <a href="#" class="btn btn-success">Learn More</a>
         </div>
     </main>
     <!-- end main -->
 
-    <!-- section intro -->
-    <section class="section bg-light" id="intro">
+    <!-- start section intro -->
+    <section class="intro">
         <div class="container">
-            <div class="flex section-intro">
-                <div class="flex intro-card bg-green-light">
-                    <div class="intro-icon flex"><i class="fa-solid fa-person-walking-with-cane"></i></div>
-                    <div class="intro-desc">
-                        <h2>Dog Walking</h2>
-                        <p class="intro-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-                            molestiae placeat nemo laborum delectus incidunt veniam eos eius itaque ad!</p>
+            <div class="intro__container">
+                <div class="intro__card">
+                    <div class="intro__card-icon">
+                        <i class="fa-solid fa-person-walking-with-cane"></i>
                     </div>
-                    <a class="intro-btn flex" href="#" aria-label="Read More"><i
-                            class="fa-solid fa-angle-right"></i></a>
+                    <div class="intro__card-desc">
+                        <h2>Dog Walking</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+                            molestiae placeat nemo laborum delectus incidunt veniam eos eius itaque ad!
+                        </p>
+                    </div>
+                    <a class="intro__card-btn" href="#" aria-label="Read More">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
                 </div>
-                <div class="flex intro-card bg-white">
-                    <div class="intro-icon flex"><i class="fa-solid fa-dog"></i></div>
-                    <div class="intro-desc">
+                <div class="intro__card">
+                    <div class="intro__card-icon">
+                        <i class="fa-solid fa-dog"></i>
+                    </div>
+                    <div class="intro__card-desc">
                         <h2>Pet Daycare</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, corrupti? Saepe est reiciendis,
                             itaque, impedit exercitationem commodi consequuntur et voluptas maxime illo fuga
-                            reprehenderit magnam.</p>
+                            reprehenderit magnam.
+                        </p>
                     </div>
-                    <a class="intro-btn flex" href="#" aria-label="Read More"><i
-                            class="fa-solid fa-angle-right"></i></a>
+                    <a class="intro__card-btn" href="#" aria-label="Read More">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
                 </div>
-                <div class=" flex intro-card bg-white">
-                    <div class="intro-icon flex"><i class="fa-solid fa-scissors"></i></div>
-                    <div class="intro-desc">
+                <div class="intro__card">
+                    <div class="intro__card-icon">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <div class="intro__card-desc">
                         <h2>Pet Grooming</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto repudiandae vel reprehenderit
-                            modi ea nobis.</p>
+                            modi ea nobis.
+                        </p>
                     </div>
-                    <a class="intro-btn flex" href="#" aria-label="Read More"><i
-                            class="fa-solid fa-angle-right"></i></a>
+                    <a class="intro__card-btn" href="#" aria-label="Read More">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- end section intro -->
 
     <!-- section about -->
     <section class="section" id="about">
-        <div class="container grid section-about">
-            <div class="about-img">
+        <div class="container about">
+            <div class="about__image">
                 <img src="assets/images/about-1.jpg" alt="Dog Image">
             </div>
 
-            <div class="about-desc grid">
-                <h2 class="section-title">Why Choose Us?</h2>
-                <div class="flex card-service" id="service1">
-                    <div class="service-icon flex"><i class="fa-solid fa-stethoscope"></i></div>
-                    <div class="service-desc">
+            <div class="about__desc">
+                <h2 class="section__title" id="about-title">Why Choose Us?</h2>
+                <div class="about__card" id="service1">
+                    <div class="about__card-icon">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <div class="about__card-desc">
                         <h2>Care Advices</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, ipsum.</p>
                     </div>
                 </div>
-                <div class="flex card-service" id="service2">
-                    <div class="service-icon flex"><i class="fa-solid fa-phone"></i></div>
-                    <div class="service-desc">
+                <div class="about__card" id="service2">
+                    <div class="about__card-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="about__card-desc">
                         <h2>Customer Supports</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
-                <div class="flex card-service" id="service3">
-                    <div class="service-icon flex"><i class="fa-solid fa-kit-medical"></i></div>
-                    <div class="service-desc">
+                <div class="about__card" id="service3">
+                    <div class="about__card-icon">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <div class="about__card-desc">
                         <h2>Emergency Services</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto?</p>
                     </div>
                 </div>
-                <div class="flex card-service" id="service4">
-                    <div class="service-icon flex"><i class="fa-solid fa-user-doctor"></i></div>
-                    <div class="service-desc">
+                <div class="about__card" id="service4">
+                    <div class="about__card-icon">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <div class="about__card-desc">
                         <h2>Veterinary Help</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
@@ -209,24 +215,25 @@
             </div>
         </div>
     </section>
+    <!-- end section about -->
 
     <!-- section counter -->
-    <section class="section" id="section-counter">
+    <section class="section" id="counter">
         <div class="container">
-            <div class="grid section-counter">
-                <div class="counter-card">
+            <div class="counter">
+                <div class="counter__card">
                     <h2>50</h2>
                     <span>Customer</span>
                 </div>
-                <div class="counter-card">
+                <div class="counter__card">
                     <h2>8,500</h2>
                     <span>Professionais</span>
                 </div>
-                <div class="counter-card">
+                <div class="counter__card">
                     <h2>20</h2>
                     <span>Products</span>
                 </div>
-                <div class="counter-card">
+                <div class="counter__card">
                     <h2>50</h2>
                     <span>Pets Hosted</span>
                 </div>
@@ -234,20 +241,21 @@
         </div>
     </section>
 
-    <!-- section veterinarian -->
-    <section class="section section-center bg-light" id="veterinarian">
+    <!-- section veterinarians -->
+    <section class="section section__center" id="veterinarian">
         <div class="container">
-            <h2 class="section-title">Our Veterinarians</h2>
-            <div class="grid veterinarin-cards">
-                <div class="veterinarian-card">
-                    <div class="veterinarian-img">
+            <h2 class="section__title">Our Veterinarians</h2>
+
+            <div class="veterinarins__wrap">
+                <div class="veterinarins__card">
+                    <div class="veterinarins__card-img">
                         <img src="assets/images/veterinarin-1.jpg" alt="Veterinarian Photo">
                     </div>
-                    <div class="veterinarian-desc">
+                    <div class="veterinarins__card-desc">
                         <h2>Lloyd Wilson</h2>
                         <span>Health Coach</span>
                         <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                        <ul class="flex veterinarian-social">
+                        <ul class="veterinarins__card-social">
                             <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                             <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
                             <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
@@ -255,15 +263,15 @@
                         </ul>
                     </div>
                 </div>
-                <div class="veterinarian-card">
-                    <div class="veterinarian-img">
+                <div class="veterinarins__card">
+                    <div class="veterinarins__card-img">
                         <img src="assets/images/veterinarin-2.jpg" alt="Veterinarian Photo">
                     </div>
-                    <div class="veterinarian-desc">
+                    <div class="veterinarins__card-desc">
                         <h2>Isabella Nguyen</h2>
                         <span>Life & Business Coach</span>
                         <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                        <ul class="flex veterinarian-social">
+                        <ul class="veterinarins__card-social">
                             <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                             <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
                             <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
@@ -271,15 +279,15 @@
                         </ul>
                     </div>
                 </div>
-                <div class="veterinarian-card">
-                    <div class="veterinarian-img">
+                <div class="veterinarins__card">
+                    <div class="veterinarins__card-img">
                         <img src="assets/images/veterinarin-3.jpg" alt="Veterinarian Photo">
                     </div>
-                    <div class="veterinarian-desc">
+                    <div class="veterinarins__card-desc">
                         <h2>Ian Smith</h2>
                         <span>Executive Coach</span>
                         <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                        <ul class="flex veterinarian-social">
+                        <ul class="veterinarins__card-social">
                             <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                             <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
                             <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
@@ -287,15 +295,15 @@
                         </ul>
                     </div>
                 </div>
-                <div class="veterinarian-card">
-                    <div class="veterinarian-img">
+                <div class="veterinarins__card">
+                    <div class="veterinarins__card-img">
                         <img src="assets/images/veterinarin-4.jpg" alt="Veterinarian Photo">
                     </div>
-                    <div class="veterinarian-desc">
+                    <div class="veterinarins__card-desc">
                         <h2>Ava Mitchell</h2>
                         <span>Health Coach</span>
                         <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                        <ul class="flex veterinarian-social">
+                        <ul class="veterinarins__card-social">
                             <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                             <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
                             <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
@@ -303,15 +311,15 @@
                         </ul>
                     </div>
                 </div>
-                <div class="veterinarian-card">
-                    <div class="veterinarian-img">
+                <div class="veterinarins__card">
+                    <div class="veterinarins__card-img">
                         <img src="assets/images/veterinarin-5.jpg" alt="Veterinarian Photo">
                     </div>
-                    <div class="veterinarian-desc">
+                    <div class="veterinarins__card-desc">
                         <h2>Ethan Sullivan</h2>
                         <span>Life & Business Coach</span>
                         <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                        <ul class="flex veterinarian-social">
+                        <ul class="veterinarins__card-social">
                             <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                             <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
                             <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
@@ -319,15 +327,15 @@
                         </ul>
                     </div>
                 </div>
-                <div class="veterinarian-card">
-                    <div class="veterinarian-img">
+                <div class="veterinarins__card">
+                    <div class="veterinarins__card-img">
                         <img src="assets/images/veterinarin-6.jpg" alt="Veterinarian Photo">
                     </div>
-                    <div class="veterinarian-desc">
+                    <div class="veterinarins__card-desc">
                         <h2>Grace Lee</h2>
                         <span>Executive Coach</span>
                         <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                        <ul class="flex veterinarian-social">
+                        <ul class="veterinarins__card-social">
                             <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                             <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
                             <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
@@ -335,15 +343,15 @@
                         </ul>
                     </div>
                 </div>
-                <div class="veterinarian-card">
-                    <div class="veterinarian-img">
+                <div class="veterinarins__card">
+                    <div class="veterinarins__card-img">
                         <img src="assets/images/veterinarin-7.jpg" alt="Veterinarian Photo">
                     </div>
-                    <div class="veterinarian-desc">
+                    <div class="veterinarins__card-desc">
                         <h2>Elijah Khan</h2>
                         <span>Life & Business Coach</span>
                         <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                        <ul class="flex veterinarian-social">
+                        <ul class="veterinarins__card-social">
                             <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                             <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
                             <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
@@ -351,15 +359,15 @@
                         </ul>
                     </div>
                 </div>
-                <div class="veterinarian-card">
-                    <div class="veterinarian-img">
+                <div class="veterinarins__card">
+                    <div class="veterinarins__card-img">
                         <img src="assets/images/veterinarin-8.jpg" alt="Veterinarian Photo">
                     </div>
-                    <div class="veterinarian-desc">
+                    <div class="veterinarins__card-desc">
                         <h2>Mia Chang</h2>
                         <span>Health Coach</span>
                         <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                        <ul class="flex veterinarian-social">
+                        <ul class="veterinarins__card-social">
                             <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                             <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
                             <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
@@ -370,258 +378,243 @@
             </div>
         </div>
     </section>
+    <!-- end section veterinarians -->
 
     <!-- section faqs -->
-    <section class="section" id="faq">
+    <section class="section faq" id="faq">
         <div class="container">
-            <div class="section-faq grid">
-                <div class="faq-questions">
-                    <h2 class="section-title">Frequently Asks Questions</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                        live the blind texts.</p>
+            <div class="faq__container">
+                <div class="faq__questions">
+                    <h2 class="section__title">Frequently Asks Questions</h2>
+                    <p class="faq__container-paragraph">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts.</p>
 
-                    <button class="faq-accordion-btn">How To Train Your Pet Dog?</button>
-                    <div class="faq-panel">
-                        <ol>
-                            <li>Far far away, behind the word mountains</li>
-                            <li>Consonantia, there live the blind texts</li>
-                            <li>When she reached the first hills of the Italic Mountains</li>
-                            <li>Bookmarksgrove, the headline of Alphabet Village</li>
-                            <li>Separated they live in Bookmarksgrove right</li>
-                        </ol>
-                    </div>
+                    <dl class="faq__accordion">
+                        <dt><button class="faq__accordion-btn">How To Train Your Pet Dog?</button></dt>
+                        <dd class="faq__accordion-panel">
+                            <div>
+                                <ol>
+                                    <li>Far far away, behind the word mountains</li>
+                                    <li>Consonantia, there live the blind texts</li>
+                                    <li>When she reached the first hills of the Italic Mountains</li>
+                                    <li>Bookmarksgrove, the headline of Alphabet Village</li>
+                                    <li>Separated they live in Bookmarksgrove right</li>
+                                </ol>
+                            </div>
+                        </dd>
 
-                    <button class="faq-accordion-btn">How To Manage Your Pets?</button>
-                    <div class="faq-panel">
-                        <ol>
-                            <li>Far far away, behind the word mountains</li>
-                            <li>Consonantia, there live the blind texts</li>
-                            <li>When she reached the first hills of the Italic Mountains</li>
-                            <li>Bookmarksgrove, the headline of Alphabet Village</li>
-                            <li>Separated they live in Bookmarksgrove right</li>
-                        </ol>
-                    </div>
+                        <dt><button class="faq__accordion-btn">How To Manage Your Pets?</button></dt>
+                        <dd class="faq__accordion-panel">
+                            <div>
+                                <ol>
+                                    <li>Far far away, behind the word mountains</li>
+                                    <li>Consonantia, there live the blind texts</li>
+                                    <li>When she reached the first hills of the Italic Mountains</li>
+                                    <li>Bookmarksgrove, the headline of Alphabet Village</li>
+                                    <li>Separated they live in Bookmarksgrove right</li>
+                                </ol>
+                            </div>
+                        </dd>
 
-                    <button class="faq-accordion-btn">What Is The Best Grooming For Your Pets?</button>
-                    <div class="faq-panel">
-                        <ol>
-                            <li>Far far away, behind the word mountains</li>
-                            <li>Consonantia, there live the blind texts</li>
-                            <li>When she reached the first hills of the Italic Mountains</li>
-                            <li>Bookmarksgrove, the headline of Alphabet Village</li>
-                            <li>Separated they live in Bookmarksgrove right</li>
-                        </ol>
-                    </div>
+                        <dt><button class="faq__accordion-btn">What Is The Best Grooming For Your Pets?</button></dt>
+                        <dd class="faq__accordion-panel">
+                            <div>
+                                <ol>
+                                    <li>Far far away, behind the word mountains</li>
+                                    <li>Consonantia, there live the blind texts</li>
+                                    <li>When she reached the first hills of the Italic Mountains</li>
+                                    <li>Bookmarksgrove, the headline of Alphabet Village</li>
+                                    <li>Separated they live in Bookmarksgrove right</li>
+                                </ol>
+                            </div>
+                        </dd>
 
-                    <button class="faq-accordion-btn">What Are Those Requirements For Sitting Pets?</button>
-                    <div class="faq-panel">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
-                            Semantics, a large language ocean.
-                        </p>
-                    </div>
+                        <dt><button class="faq__accordion-btn">What Are Those Requirements For Sitting Pets?</button>
+                        </dt>
+                        <dd class="faq__accordion-panel">
+                            <div>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
+                                    at the coast of the Semantics, a large language ocean.
+                                </p>
+                            </div>
+                        </dd>
 
+                    </dl>
                 </div>
-                <div class="grid faq-media">
-                    <img src="assets/images/faq-1.jpg" alt="Animals Image">
-                    <a href="#movieModal" aria-label="Button Movie" class="flex btn-round" id="btnMovieModal">
-                        <i class="fa-solid fa-play"></i>
-                    </a>
-                </div>
-                <div class="modal" id="movieModal">
-                    <a href="#movieModal" aria-label="Close Modal" class="btn-modal" id="modalVideoClose">
-                        <i class="fa-solid fa-xmark"></i>
-                    </a>
-                    <div class="modal-content">
-                        <div class="video">
-                            <video controls id="myVideo">
-                                <source src="assets/movies/movie.mp4" type="video/mp4">
-                            </video>
-                        </div>
+
+                <div class="faq__media">
+                    <div class="faq__media-header">
+                        <img src="assets/images/faq-1.jpg" alt="Animals Image" width="4321" height="2728">
+                        <a href="#movieModal" aria-label="Abrir modal" class="btn-round" id="faqModalOpen">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                    <div class="faq__media-footer">
+                        <img src="assets/images/faq-2.jpg" alt="Dog Photo" height="640" width="640">
+                        <img src="assets/images/faq-3.jpg" alt="Dog Photo" height="640" width="640">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- section comments -->
-    <section class="section section-center" id="testimony">
+        <div class="modal" id="faqModal">
+            <a href="#faq" aria-label="Close Modal" class="modal__btn" id="faqModalClose">
+                <i class="fa-solid fa-xmark"></i>
+            </a>
+            <div class="modal__content">
+                <div class="faq__video">
+                    <video controls id="faqVideo">
+                        <source src="assets/videos/movie01.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section faqs -->
+
+    <!-- section testimony -->
+    <section class="section section__center testimony">
         <div class="container">
-            <h2 class="section-title">
+            <h2 class="section__title">
                 Happy Clients & Feedbacks
             </h2>
-            <div class="testimony-carousel">
-                <div class="owl-carousel">
-                    <div class="item">
-                        <div class="flex testimony-wrap">
-                            <div class="flex testimony-quot"><i class="fa-solid fa-quote-left"></i></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nihil quidem vel
-                                similique? Laudantium et fuga iure voluptatem quod ipsa.</p>
-                            <div class="flex testimony-comment">
-                                <div class="comment-user">
-                                    <img src="assets/images/comment (1).png" alt="Profile">
-                                </div>
-                                <div class="comment-info">
-                                    <h2>Jane Doe</h2>
-                                    <span>Marketing Manager</span>
-                                </div>
-                            </div>
-                        </div>
+
+            <div class="testimony__container">
+                <div class="testimony__card">
+                    <div class="testimony__card-img">
+                        <img src="assets/images/comment-01.png" alt="User Profile">
                     </div>
-                    <div class="item">
-                        <div class="flex testimony-wrap">
-                            <div class="flex testimony-quot"><i class="fa-solid fa-quote-left"></i></div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut nostrum adipisci fugit, esse
-                                explicabo impedit.</p>
-                            <div class="flex testimony-comment">
-                                <div class="comment-user">
-                                    <img src="assets/images/comment (2).png" alt="Profile">
-                                </div>
-                                <div class="comment-info">
-                                    <h2>John Doe</h2>
-                                    <span>Marketing Manager</span>
-                                </div>
-                            </div>
-                        </div>
+                    <h3>Karina Carver</h3>
+                    <span>magna aliqua. Ut</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    </p>
+                </div>
+                <div class="testimony__card">
+                    <div class="testimony__card-img">
+                        <img src="assets/images/comment-02.png" alt="User Profile">
                     </div>
-                    <div class="item">
-                        <div class="flex testimony-wrap">
-                            <div class="flex testimony-quot"><i class="fa-solid fa-quote-left"></i></div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta totam veritatis ab
-                                provident consectetur neque! Modi, voluptatem natus!</p>
-                            <div class="flex testimony-comment">
-                                <div class="comment-user">
-                                    <img src="assets/images/comment (3).png" alt="Profile">
-                                </div>
-                                <div class="comment-info">
-                                    <h2>Jane Doe</h2>
-                                    <span>Marketing Manager</span>
-                                </div>
-                            </div>
-                        </div>
+                    <h3>Vernon Bourne</h3>
+                    <span>magna aliqua. Ut</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    </p>
+                </div>
+                <div class="testimony__card">
+                    <div class="testimony__card-img">
+                        <img src="assets/images/comment-03.png" alt="User Profile">
                     </div>
-                    <div class="item">
-                        <div class="flex testimony-wrap">
-                            <div class="flex testimony-quot"><i class="fa-solid fa-quote-left"></i></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, ut.</p>
-                            <div class="flex testimony-comment">
-                                <div class="comment-user">
-                                    <img src="assets/images/comment (4).png" alt="Profile">
-                                </div>
-                                <div class="comment-info">
-                                    <h2>John Doe</h2>
-                                    <span>Marketing Manager</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <h3>Sinead Klein</h3>
+                    <span>magna aliqua. Ut</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- end section testimony -->
 
     <!-- section packages -->
-    <section class="section section-center" id="package">
+    <section class="section section__center package" id="package">
         <div class="container">
-            <div class="package-section">
-                <h2 class="section-title">Affordable Packages</h2>
-
-                <div class="flex package-cards">
-                    <div class="package-card">
-                        <div class="package-img">
-                            <img src="assets/images/personal-package.jpg" alt="Pets Photo">
-                        </div>
-                        <div class="package-desc">
-                            <h2>Personal</h2>
-                            <p>
-                                <sup>$</sup>
-                                <span>49</span>
-                                <sub>/mes</sub>
-                            </p>
-                            <ul>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    5 Dogs Walk
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    3 Vet Visit
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    3 Pet Spa
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    Free Supports
-                                </li>
-                            </ul>
-                            <a href="#" class="btn btn-success">Get Started</a>
-                        </div>
+            <h2 class="section__title">Affordable Packages</h2>
+            <div class="package__container">
+                <div class="package__card">
+                    <div class="package__card-img">
+                        <img src="assets/images/personal-package.jpg" alt="Pets Photo">
                     </div>
-                    <div class="package-card">
-                        <div class="package-img">
-                            <img src="assets/images/business-package.jpg" alt="Pets Photo">
-                        </div>
-                        <div class="package-desc">
-                            <h2>Business</h2>
-                            <p>
-                                <sup>$</sup>
-                                <span>79</span>
-                                <sub>/mes</sub>
-                            </p>
-                            <ul>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    5 Dogs Walk
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    3 Vet Visit
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    3 Pet Spa
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    Free Supports
-                                </li>
-                            </ul>
-                            <a href="#" class="btn btn-success">Get Started</a>
-                        </div>
+                    <div class="package__card-desc">
+                        <h2>Personal</h2>
+                        <p>
+                            <sup>$</sup>
+                            <span>49</span>
+                            <sub>/mes</sub>
+                        </p>
+                        <ul class="package__card-list">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                5 Dogs Walk
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                3 Vet Visit
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                3 Pet Spa
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Free Supports
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-success">Get Started</a>
                     </div>
-                    <div class="package-card">
-                        <div class="package-img">
-                            <img src="assets/images/ultimate-package.jpg" alt="Pets Photo">
-                        </div>
-                        <div class="package-desc">
-                            <h2>Ultimate</h2>
-                            <p>
-                                <sup>$</sup>
-                                <span>109</span>
-                                <sub>/mes</sub>
-                            </p>
-                            <ul>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    5 Dogs Walk
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    3 Vet Visit
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    3 Pet Spa
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    Free Supports
-                                </li>
-                            </ul>
-                            <a href="#" class="btn btn-success">Get Started</a>
-                        </div>
+                </div>
+                <div class="package__card">
+                    <div class="package__card-img">
+                        <img src="assets/images/business-package.jpg" alt="Pets Photo">
+                    </div>
+                    <div class="package__card-desc">
+                        <h2>Business</h2>
+                        <p>
+                            <sup>$</sup>
+                            <span>79</span>
+                            <sub>/mes</sub>
+                        </p>
+                        <ul class="package__card-list">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                5 Dogs Walk
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                3 Vet Visit
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                3 Pet Spa
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Free Supports
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-success">Get Started</a>
+                    </div>
+                </div>
+                <div class="package__card">
+                    <div class="package__card-img">
+                        <img src="assets/images/ultimate-package.jpg" alt="Pets Photo">
+                    </div>
+                    <div class="package__card-desc">
+                        <h2>Ultimate</h2>
+                        <p>
+                            <sup>$</sup>
+                            <span>109</span>
+                            <sub>/mes</sub>
+                        </p>
+                        <ul class="package__card-list">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                5 Dogs Walk
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                3 Vet Visit
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                3 Pet Spa
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Free Supports
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-success">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -629,108 +622,169 @@
     </section>
 
     <!-- section gallery -->
-    <div class="section section-center" id="gallery">
+    <section class="section section__center" id="gallery">
         <div class="container">
-            <h2 class="section-title">Pets Gallery</h2>
+            <h2 class="section__title">Pets Gallery</h2>
 
-            <div class="grid gallery-cards">
-                <div class="gallery-card">
-                    <img src="assets/images/gallery-1.jpg" alt="Animal Photo">
-                    <a href="#gallery" class="btn-round flex btn-gallery" id="gallery-1" aria-label="Open Photo">
-                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
-                    <div class="gallery-desc">
-                        <span>#cat</span>
+            <div class="gallery" id="galleryContainer">
+                <div class="gallery__card">
+                    <img src="assets/images/gallery-1.jpg" alt="Pet Photo" height="2304" width="3456">
+
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-1"
+                        aria-label="Open Photo">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+
+                    <div class="gallery__card-desc">
+                        <p>#cat</p>
                     </div>
                 </div>
-                <div class="gallery-card">
-                    <img src="assets/images/gallery-2.jpg" alt="Animal Photo">
-                    <a href="#gallery" class="btn-round flex btn-gallery" id="gallery-2" aria-label="Open Photo">
-                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
-                    <div class="gallery-desc">
-                        <span>#dog</span>
+                <div class="gallery__card">
+                    <img src="assets/images/gallery-2.jpg" alt="Pet Photo" height="2304" width="3456">
+
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-2"
+                        aria-label="Open Photo">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+
+                    <div class="gallery__card-desc">
+                        <p>#dog</p>
                     </div>
                 </div>
-                <div class="gallery-card">
-                    <img src="assets/images/gallery-3.jpg" alt="Animal Photo">
-                    <a href="#gallery" class="btn-round flex btn-gallery" id="gallery-3" aria-label="Open Photo">
-                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
-                    <div class="gallery-desc">
-                        <span>#cat</span>
+                <div class="gallery__card">
+                    <img src="assets/images/gallery-3.jpg" alt="Pet Photo" height="2304" width="3456">
+
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-3"
+                        aria-label="Open Photo">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+
+                    <div class="gallery__card-desc">
+                        <p>#cat</p>
                     </div>
                 </div>
-                <div class="gallery-card">
-                    <img src="assets/images/gallery-4.jpg" alt="Animal Photo">
-                    <a href="#gallery" class="btn-round flex btn-gallery" id="gallery-4" aria-label="Open Photo">
-                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
-                    <div class="gallery-desc">
-                        <span>#dog</span>
+                <div class="gallery__card">
+                    <img src="assets/images/gallery-4.jpg" alt="Pet Photo" height="2304" width="3456">
+
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-4"
+                        aria-label="Open Photo">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+
+                    <div class="gallery__card-desc">
+                        <p>#dog</p>
                     </div>
                 </div>
-                <div class="gallery-card">
-                    <img src="assets/images/gallery-5.jpg" alt="Animal Photo">
-                    <a href="#gallery" class="btn-round flex btn-gallery" id="gallery-5" aria-label="Open Photo">
-                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
-                    <div class="gallery-desc">
-                        <span>#bird</span>
+                <div class="gallery__card">
+                    <img src="assets/images/gallery-5.jpg" alt="Pet Photo" height="2304" width="3456">
+
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-5"
+                        aria-label="Open Photo">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+
+                    <div class="gallery__card-desc">
+                        <p>#bird</p>
                     </div>
                 </div>
-                <div class="gallery-card">
-                    <img src="assets/images/gallery-6.jpg" alt="Animal Photo">
-                    <a href="#gallery" class="btn-round flex btn-gallery" id="gallery-6" aria-label="Open Photo">
-                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
-                    <div class="gallery-desc">
-                        <span>#rabbit</span>
+                <div class="gallery__card">
+                    <img src="assets/images/gallery-6.jpg" alt="Pet Photo" height="2304" width="3456">
+
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-6"
+                        aria-label="Open Photo">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+
+                    <div class="gallery__card-desc">
+                        <p>#rabbit</p>
+                    </div>
+                </div>
+                <div class="gallery__card">
+                    <img src="assets/images/gallery-7.jpg" alt="Pet Photo" height="2304" width="3456">
+
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-7"
+                        aria-label="Open Photo">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+
+                    <div class="gallery__card-desc">
+                        <p>#dog</p>
+                    </div>
+                </div>
+                <div class="gallery__card">
+                    <img src="assets/images/gallery-8.jpg" alt="Pet Photo" height="2304" width="3456">
+
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-8"
+                        aria-label="Open Photo">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+
+                    <div class="gallery__card-desc">
+                        <p>#bird</p>
+                    </div>
+                </div>
+                <div class="gallery__card">
+                    <img src="assets/images/gallery-9.jpg" alt="Pet Photo" height="2304" width="3456">
+
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-9"
+                        aria-label="Open Photo">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+
+                    <div class="gallery__card-desc">
+                        <p>#rabbit</p>
                     </div>
                 </div>
             </div>
 
-            <div class="modal" id="galleryModal">
-                <a href="#gallery" aria-label="Close Modal" class="btn-modal" id="modalImgClose">
+            <div class="modal" id="img-modal">
+                <a href="#galleryContainer" aria-label="Close Modal" class="modal__btn" id="closeGalleryModal">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
-                <div class="modal-content">
+                <div class="modal__content">
                     <div class="modal-img">
-                        <img src="" alt="Pet Image" id="imgModalOpen">
+                        <img src="" alt="Pet Image" id="modalImg">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- end section gallery -->
 
     <!-- section blog -->
-    <section class="section section-center bg-light" id="blog">
-        <h2 class="section-title">Latest news from our blog</h2>
+    <section class="section section__center" id="blog">
+        <h2 class="section__title">Latest news from our blog</h2>
 
         <div class="container">
-            <div class="grid blog-cards">
-                <div class="blog-card">
-                    <div class="blog-img">
+            <div class="blog__cards">
+                <div class="blog__card">
+                    <div class="blog__card-img">
                         <img src="assets/images/blog-1.jpg" alt="Animal Photo">
                     </div>
-                    <div class="blog-desc">
-                        <p class="post-date">January 14, 2024 admin
+                    <div class="blog__card-desc">
+                        <p>January 14, 2024 admin
                             <span><i class="fa-solid fa-comment"></i> 3</span>
                         </p>
                         <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, est.</h2>
                     </div>
                 </div>
-                <div class="blog-card">
-                    <div class="blog-img">
+                <div class="blog__card">
+                    <div class="blog__card-img">
                         <img src="assets/images/blog-2.jpg" alt="Animal Photo">
                     </div>
-                    <div class="blog-desc">
-                        <p class="post-date">December 14, 2023 admin
+                    <div class="blog__card-desc">
+                        <p>December 14, 2023 admin
                             <span><i class="fa-solid fa-comment"></i> 5</span>
                         </p>
                         <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora dolore sequi.</h2>
                     </div>
                 </div>
-                <div class="blog-card">
-                    <div class="blog-img">
+                <div class="blog__card">
+                    <div class="blog__card-img">
                         <img src="assets/images/blog-3.jpg" alt="Animal Photo">
                     </div>
-                    <div class="blog-desc">
-                        <p class="post-date">January 11, 2024 admin
+                    <div class="blog__card-desc">
+                        <p>January 11, 2024 admin
                             <span><i class="fa-solid fa-comment"></i> 8</span>
                         </p>
                         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
@@ -739,140 +793,41 @@
             </div>
         </div>
     </section>
+    <!-- end section blog -->
 
     <!-- section contact -->
-    <section class="section" id="contact">
-        <div class="flex contact-container">
-            <div class="contact-form">
-                <div class="container-form">
-                    <h1 class="form-title">Free Consultation</h1>
-                    <form action="#" class="grid form">
-                        <div class="form-field" id="fselect">
-                            <div class="select-icon">
-                                <i class="fa-solid fa-angle-down"></i>
-                            </div>
-                            <select name="Services" id="services" class="form-control" aria-label="Select Services">
-                                <option value="">Select Services</option>
-                                <option value="sitting">Cat Sitting</option>
-                                <option value="walk">Dog Walk</option>
-                                <option value="spa">Pet Spa</option>
-                                <option value="grooming">Pet Grooming</option>
-                                <option value="daycare">Pet Daycare</option>
-                            </select>
-                        </div>
-                        <div class="form-field" id="fname">
-                            <input class="form-control" type="text" name="name" id="name" placeholder="Your Name">
-                        </div>
-                        <div class="form-field" id="fvehicle">
-                            <input class="form-control" type="text" name="vehicle" id="vehicle"
-                                placeholder="Vehicle Number">
-                        </div>
-                        <div class="form-field" id="fdate">
-                            <input class="form-control" type="date" name="date" id="date" placeholder="Date">
-                        </div>
-                        <div class="form-field" id="ftime">
-                            <input class="form-control" type="time" name="time" id="time" placeholder="Time">
-                        </div>
-                        <div class="form-field" id="fmessage">
-                            <textarea class="form-control" name="message" id="message" cols="40" rows="7"
-                                placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-field" id="fbutton">
-                            <button class="btn btn-success form-btn">Send Message</button>
-                        </div>
-                    </form>
+    <section class="section section__center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <div class="container">
+            <div class="contact__info">
+                <div class="contact__info-item">
+                    <div><i class="fa-solid fa-location-dot"></i></div>
+                    <span>Address
+                        <address>198 West 21th Street, Suite 721 New York NY 10016</address>
+                    </span>
+                </div>
+                <div class="contact__info-item">
+                    <div><i class="fa-solid fa-phone"></i></div>
+                    <span>Phone: <a href="tel:+5583912345678">+55 83 91234-5678</a></span>
+                </div>
+                <div class="contact__info-item">
+                    <div><i class="fa-solid fa-paper-plane"></i></div>
+                    <span>Email: <a href="mailto:info@contato.com">info@contato.com</a></span>
+                </div>
+                <div class="contact__info-item">
+                    <div><i class="fa-solid fa-earth-americas"></i></div>
+                    <span>Website: <a href="#">petlor.com.br</a></span>
                 </div>
             </div>
+            <div class="contact__form">2</div>
         </div>
     </section>
+    <!-- end section contact -->
 
-    <!-- footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="grid footer-container">
-                <div class="footer-item" id="petsitting">
-                    <h2 class="footer-header">Petsitting</h2>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                    </p>
-                    <ul class="flex footer-social_list">
-                        <li>
-                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-item" id="latestNews">
-                    <h2 class="footer-header">Latest News</h2>
-                    <div class="flex news-item">
-                        <div class="news-img">
-                            <img src="assets/images/news-1.jpg" alt="Cat Photo">
-                        </div>
-                        <div class="news-desc">
-                            <a href="#">
-                                <h2>Even the all-powerful Pointing has no control about</h2>
-                            </a>
-                            <span>January 15, 2024 - Admin 19</span>
-                        </div>
-                    </div>
-                    <div class="flex news-item">
-                        <div class="news-img">
-                            <img src="assets/images/news-2.jpg" alt="Dog Photo">
-                        </div>
-                        <div class="news-desc">
-                            <a href="#">
-                                <h2>Even the all-powerful Pointing has no control about</h2>
-                            </a>
-                            <span>January 15, 2024 - Admin 19</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-item" id="quickLinks">
-                    <h2 class="footer-header">Quick Links</h2>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-item" id="questions">
-                    <h2 class="footer-header">Have a Questions?</h2>
-                    <p>
-                        <i class="fa-solid fa-map"></i>
-                        203 Fake St. Mountain View, San Francisco, California, USA
-                    </p>
-                    <p>
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+23923929210">+2 392 3929 210</a>
-                    </p>
-                    <p>
-                        <i class="fa-solid fa-paper-plane"></i>
-                        <a href="mailto:petlorcontato@email.com">petlorcontato@email.com</a>
-                    </p>
-                </div>
-            </div>
-            <p class="copyright">
-                Copyright ©2024 All rights reserved | This site is made with
-                <i class="fa-solid fa-heart"></i>
-                by <a href="#">fferreira913</a>
-            </p>
-        </div>
-    </footer>
     <!-- scripts -->
-    <script src="assets/util/OwlCarousel/docs/assets/vendors/jquery.min.js" defer></script>
-    <script src="assets/util/OwlCarousel/dist/owl.carousel.min.js" defer></script>
+    <script type="module" src="assets/js/main.js" defer></script>
     <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous" defer></script>
-    <script src="assets/js/modules/script.js" defer></script>
+
 </body>
 
 </html>

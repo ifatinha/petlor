@@ -1,0 +1,27 @@
+@use "../global/colors";
+@use "../global/mixins";
+@use "../global/typography";
+@use "../util/queries";
+
+#contact {
+    background: map-get($map: colors.$theme-colors, $key: cotton-mist);
+}
+
+.contact__info {
+
+    @include mixins.grid(1fr);
+    gap             : 32px;
+    margin-bottom   : 60px;
+
+    @include queries.devices(l) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include queries.devices(t) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-item {
+        background: plum;
+    }
+}
