@@ -1,11 +1,13 @@
 @use "sass:map";
 
-$theme-colors: (alert-red: #dc3545,
+$theme-colors: (
+    alert-red: #dc3545,
     base-black: #000000,
     cotton-mist:#f8f9fd,
     dark-gray: #343a40,
     danger-red: #dc3545,
     deep-indigo: #6610f2,
+    deep-black: #1a1a1a,
     forest-green: #28a745,
     fresh-green: #00bd56,
     info-cyan: #17a2b8,
