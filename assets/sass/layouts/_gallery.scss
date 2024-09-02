@@ -1,5 +1,6 @@
 @use "../global/mixins";
 @use "../global/colors";
+@use "../global/typography";
 @use "../util/queries";
 
 .gallery {
@@ -22,7 +23,7 @@
         z-index      : 0;
 
         &::after {
-            background: map-get($map: colors.$theme-colors, $key: pure-white);
+            background: map-get($map: colors.$theme-colors, $key: base-black);
             content   : "";
             inset     : 0;
             opacity   : 0;
@@ -33,7 +34,7 @@
 
         &:hover {
             &::after {
-                opacity: .4;
+                opacity: .5;
             }
 
             .gallery__card-btn {
@@ -78,6 +79,28 @@
             position  : absolute;
             transition: .3s ease-in-out;
             z-index   : 98;
+
+            p {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+#img-modal {
+
+    .modal-img {
+        height   : 100%;
+        max-width: 1200px;
+        margin   : 0 auto;
+        width    : 100%;
+
+        img {
+            display        : block;
+            height         : 100%;
+            object-fit     : contain;
+            object-position: center;
+            width          : 100%;
         }
     }
 }

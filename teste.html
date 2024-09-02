@@ -626,104 +626,124 @@
         <div class="container">
             <h2 class="section__title">Pets Gallery</h2>
 
-            <div class="gallery">
+            <div class="gallery" id="galleryContainer">
                 <div class="gallery__card">
                     <img src="assets/images/gallery-1.jpg" alt="Pet Photo" height="2304" width="3456">
 
-                    <a href="#gallery" class="btn-round gallery__card-btn" id="gallery-1" aria-label="Open Photo">
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-1"
+                        aria-label="Open Photo">
                         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                     </a>
 
                     <div class="gallery__card-desc">
-                        #cat
+                        <p>#cat</p>
                     </div>
                 </div>
                 <div class="gallery__card">
                     <img src="assets/images/gallery-2.jpg" alt="Pet Photo" height="2304" width="3456">
 
-                    <a href="#gallery" class="btn-round gallery__card-btn" id="gallery-1" aria-label="Open Photo">
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-2"
+                        aria-label="Open Photo">
                         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                     </a>
 
                     <div class="gallery__card-desc">
-                        #dog
+                        <p>#dog</p>
                     </div>
                 </div>
                 <div class="gallery__card">
                     <img src="assets/images/gallery-3.jpg" alt="Pet Photo" height="2304" width="3456">
 
-                    <a href="#gallery" class="btn-round gallery__card-btn" id="gallery-1" aria-label="Open Photo">
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-3"
+                        aria-label="Open Photo">
                         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                     </a>
 
                     <div class="gallery__card-desc">
-                        #cat
+                        <p>#cat</p>
                     </div>
                 </div>
                 <div class="gallery__card">
                     <img src="assets/images/gallery-4.jpg" alt="Pet Photo" height="2304" width="3456">
 
-                    <a href="#gallery" class="btn-round gallery__card-btn" id="gallery-1" aria-label="Open Photo">
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-4"
+                        aria-label="Open Photo">
                         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                     </a>
 
                     <div class="gallery__card-desc">
-                        #dog
+                        <p>#dog</p>
                     </div>
                 </div>
                 <div class="gallery__card">
                     <img src="assets/images/gallery-5.jpg" alt="Pet Photo" height="2304" width="3456">
 
-                    <a href="#gallery" class="btn-round gallery__card-btn" id="gallery-1" aria-label="Open Photo">
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-5"
+                        aria-label="Open Photo">
                         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                     </a>
 
                     <div class="gallery__card-desc">
-                        #bird
+                        <p>#bird</p>
                     </div>
                 </div>
                 <div class="gallery__card">
                     <img src="assets/images/gallery-6.jpg" alt="Pet Photo" height="2304" width="3456">
 
-                    <a href="#gallery" class="btn-round gallery__card-btn" id="gallery-1" aria-label="Open Photo">
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-6"
+                        aria-label="Open Photo">
                         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                     </a>
 
                     <div class="gallery__card-desc">
-                        #rabbit
+                        <p>#rabbit</p>
                     </div>
                 </div>
                 <div class="gallery__card">
                     <img src="assets/images/gallery-7.jpg" alt="Pet Photo" height="2304" width="3456">
 
-                    <a href="#gallery" class="btn-round gallery__card-btn" id="gallery-1" aria-label="Open Photo">
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-7"
+                        aria-label="Open Photo">
                         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                     </a>
 
                     <div class="gallery__card-desc">
-                        #dog
+                        <p>#dog</p>
                     </div>
                 </div>
                 <div class="gallery__card">
                     <img src="assets/images/gallery-8.jpg" alt="Pet Photo" height="2304" width="3456">
 
-                    <a href="#gallery" class="btn-round gallery__card-btn" id="gallery-1" aria-label="Open Photo">
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-8"
+                        aria-label="Open Photo">
                         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                     </a>
 
                     <div class="gallery__card-desc">
-                        #bird
+                        <p>#bird</p>
                     </div>
                 </div>
                 <div class="gallery__card">
                     <img src="assets/images/gallery-9.jpg" alt="Pet Photo" height="2304" width="3456">
 
-                    <a href="#gallery" class="btn-round gallery__card-btn" id="gallery-1" aria-label="Open Photo">
+                    <a href="#gallery" class="btn-round gallery__card-btn" data-gallery="gallery-9"
+                        aria-label="Open Photo">
                         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                     </a>
 
                     <div class="gallery__card-desc">
-                        #rabbit
+                        <p>#rabbit</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="img-modal">
+                <a href="#galleryContainer" aria-label="Close Modal" class="modal__btn" id="closeGalleryModal">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <div class="modal__content">
+                    <div class="modal-img">
+                        <img src="" alt="Pet Image" id="modalImg">
                     </div>
                 </div>
             </div>
