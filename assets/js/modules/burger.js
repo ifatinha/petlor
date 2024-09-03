@@ -1,14 +1,11 @@
+import { updateAriaAtributes } from "./updateLinks.js";
+
 export const initializeMenu = () => {
     const openButton = document.querySelector("#menu-bugger");
     const closeButton = document.querySelector("#close-menu");
     const modalBugger = document.querySelector("#modal-bugger");
 
     if (!openButton || !closeButton || !modalBugger) return;
-
-    const updateAriaAtributes = (isOpen) => {
-        openButton.setAttribute("aria-expanded", true);
-        openButton.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
-    };
 
     const toggleClass = (element, classe) => {
         element.classList.toggle(classe);
@@ -19,7 +16,7 @@ export const initializeMenu = () => {
         toggleClass(openButton, "menu-open");
 
         const isOpen = openButton.classList.contains("menu-open");
-        updateAriaAtributes(isOpen);
+        updateAriaAtributes(isOpen, openButton);
 
         toggleClass(modalBugger, "open-menu-modal");
     }

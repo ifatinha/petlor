@@ -13,8 +13,4 @@
    @include mixins.background("../images/pets-bg.jpg");
    height: 100%;
    width : 100%;
-
-   @include queries.devices(m) {
-      background-position: 30% 60%;
-   }
 }
