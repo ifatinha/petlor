@@ -62,11 +62,11 @@
         background-color: map-get($map: colors.$theme-colors, $key: light-gray);
         box-shadow      : #000000 0px 5px 20px -17px;
         color           : map-get($map: colors.$theme-colors, $key: base-black);
-        padding         : 0 .5rem;
         width           : 100%;
 
         &-wrap {
             @include mixins.flex(center, space-between);
+            gap  : 2px;
             width: 100%;
         }
 
@@ -122,11 +122,11 @@
 
             .activated {
                 &::after {
-                    width: 100%;
+                    width: 100% !important;
                 }
 
                 a {
-                    color: map-get($map: colors.$theme-colors, $key: forest-green);
+                    color: map-get($map: colors.$theme-colors, $key: forest-green) !important;
                 }
             }
         }
@@ -160,7 +160,7 @@
 
     &-navbar {
         position: relative;
-        top     : 160px;
+        top     : 210px;
         width   : 100%;
 
         @include queries.devices(t) {
@@ -191,6 +191,10 @@
                     display   : block;
                     height    : 4px;
                     width     : 50px;
+                }
+
+                sup {
+                    @include typography.font-02(18);
                 }
             }
         }

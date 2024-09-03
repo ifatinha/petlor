@@ -6,6 +6,7 @@
 #contact {
     background    : map-get($map: colors.$theme-colors, $key: cotton-mist);
     padding-bottom: 60px;
+    padding-top   : 60px;
 
     .section__title {
         text-align: center;
